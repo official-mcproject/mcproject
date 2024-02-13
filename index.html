@@ -28,15 +28,14 @@
 
           <div class="playsatoshisquest">play.satoshis.quest</div>
         </div>
+        <img
+          class="top-menu-child"
+          alt=""
+          src="./public/frame-23.svg"
+          id="frameIcon"
+        />
+
         <nav class="navigation">
-          <div class="hamburger-menu-v4" id="hamburgerMenuV4Container">
-            <img
-              class="hamburger-menu-v4-child"
-              alt=""
-              src="./public/group-23.svg"
-              id="groupIcon"
-            />
-          </div>
           <div class="desktop-menu">
             <div class="guides">Guides</div>
             <div class="forums">Forums</div>
@@ -57,7 +56,6 @@
           <img class="picture-icon" alt="" src="./public/picture_1@3x.png" />
         </div>
       </div>
-      <nav class="top-menu1"></nav>
       <nav class="top-menu">
         <div class="bottom-menu-inner">
           <div class="satoshis-quest-parent">
@@ -121,7 +119,7 @@
           }
         });
       }
-
+      
       var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
       var observer = new IntersectionObserver(
         (entries) => {
@@ -137,21 +135,21 @@
           threshold: 0.15,
         }
       );
-
+      
       for (let i = 0; i < scrollAnimElements.length; i++) {
         observer.observe(scrollAnimElements[i]);
       }
-
+      
       var maskGroup1 = document.getElementById("maskGroup1");
       if (maskGroup1) {
         maskGroup1.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/";
         });
       }
-
-      var groupIcon = document.getElementById("groupIcon");
-      if (groupIcon) {
-        groupIcon.addEventListener("click", function () {
+      
+      var frameIcon = document.getElementById("frameIcon");
+      if (frameIcon) {
+        frameIcon.addEventListener("click", function () {
           var drawerOverlay = document.getElementById("mobileMenu");
           if (!drawerOverlay) return;
           var drawerOverlayStyle = drawerOverlay.style;
@@ -163,7 +161,7 @@
             drawerOverlayStyle.justifyContent = "";
           }
           drawerOverlay.setAttribute("closable", "");
-
+      
           var onClick =
             drawerOverlay.onClick ||
             function (e) {
@@ -177,37 +175,6 @@
           drawerOverlay.addEventListener("click", onClick);
         });
       }
-
-      var hamburgerMenuV4Container = document.getElementById(
-        "hamburgerMenuV4Container"
-      );
-      if (hamburgerMenuV4Container) {
-        hamburgerMenuV4Container.addEventListener("click", function () {
-          var drawerOverlay = document.getElementById("mobileMenu");
-          if (!drawerOverlay) return;
-          var drawerOverlayStyle = drawerOverlay.style;
-          if (drawerOverlayStyle) {
-            drawerOverlayStyle.display = "flex";
-            drawerOverlayStyle.zIndex = 99;
-            drawerOverlayStyle.backgroundColor = "rgba(112, 112, 112, 0.5)";
-            drawerOverlayStyle.alignItems = "flex-end";
-            drawerOverlayStyle.justifyContent = "";
-          }
-          drawerOverlay.setAttribute("closable", "");
-
-          var onClick =
-            drawerOverlay.onClick ||
-            function (e) {
-              if (
-                e.target === drawerOverlay &&
-                drawerOverlay.hasAttribute("closable")
-              ) {
-                drawerOverlayStyle.display = "none";
-              }
-            };
-          drawerOverlay.addEventListener("click", onClick);
-        });
-      }
-    </script>
+      </script>
   </body>
 </html>

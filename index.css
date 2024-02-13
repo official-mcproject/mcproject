@@ -27,16 +27,12 @@
   justify-content: flex-start;
   gap: 16px;
 }
-.hamburger-menu-v4-child {
-  width: 31.8px;
-  position: relative;
+.top-menu-child {
   height: 24px;
-}
-.hamburger-menu-v4 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  display: none;
 }
 .donate,
 .forums,
@@ -84,10 +80,9 @@
   font-family: var(--font-inter);
 }
 .navigation {
-  width: 317px;
   height: 40px;
+  width: 317px;
   justify-content: flex-end;
-  gap: 20px;
 }
 .top-menu {
   align-self: stretch;
@@ -113,32 +108,20 @@
   height: 497px;
   object-fit: cover;
 }
+.body,
 .picture-wrapper {
+  align-self: stretch;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.body,
-.picture-wrapper,
-.top-menu1 {
-  align-self: stretch;
-}
 .body {
   background-color: var(--color-white);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: flex-start;
   padding: var(--padding-13xl) 64px;
   gap: var(--gap-13xl);
-}
-.top-menu1 {
-  margin: 0;
-  height: 36px;
-  background-color: var(--color-gray);
 }
 .satoshis-quest {
   position: relative;
@@ -207,16 +190,17 @@
   font-family: var(--font-inter);
 }
 @media screen and (max-width: 1200px) {
-  .hamburger-menu-v4 {
-    display: none;
+  .navigation {
+    display: flex;
   }
 }
 @media screen and (max-width: 960px) {
-  .hamburger-menu-v4,
-  .playsatoshisquest {
+  .playsatoshisquest,
+  .top-menu-child {
     display: flex;
   }
-  .desktop-menu {
+  .desktop-menu,
+  .navigation {
     display: none;
   }
   .body {
@@ -235,6 +219,7 @@
   .playsatoshisquest {
     display: none;
   }
+  .body,
   .top-menu {
     padding-left: var(--padding-base);
     padding-right: var(--padding-base);
@@ -242,12 +227,6 @@
   }
   .body {
     padding-top: var(--padding-13xl);
-  }
-  .body,
-  .top-menu1 {
-    padding-left: var(--padding-base);
-    padding-right: var(--padding-base);
-    box-sizing: border-box;
   }
   .playsatoshisquest1,
   .satoshis-quest {
