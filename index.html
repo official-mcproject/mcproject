@@ -57,7 +57,7 @@
           <img class="picture-icon" alt="" src="./public/picture_1@3x.png" />
         </div>
       </div>
-      <nav class="top-menu">
+      <nav class="bottom-menu">
         <div class="bottom-menu-inner">
           <div class="satoshis-quest-parent">
             <div class="satoshis-quest">Satoshi’s Quest</div>
@@ -120,7 +120,7 @@
           }
         });
       }
-
+      
       var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
       var observer = new IntersectionObserver(
         (entries) => {
@@ -136,18 +136,18 @@
           threshold: 0.15,
         }
       );
-
+      
       for (let i = 0; i < scrollAnimElements.length; i++) {
         observer.observe(scrollAnimElements[i]);
       }
-
+      
       var maskGroup1 = document.getElementById("maskGroup1");
       if (maskGroup1) {
         maskGroup1.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/";
         });
       }
-
+      
       var hamburgerMenuV5Icon = document.getElementById("hamburgerMenuV5Icon");
       if (hamburgerMenuV5Icon) {
         hamburgerMenuV5Icon.addEventListener("click", function () {
@@ -162,7 +162,7 @@
             drawerOverlayStyle.justifyContent = "";
           }
           drawerOverlay.setAttribute("closable", "");
-
+      
           var onClick =
             drawerOverlay.onClick ||
             function (e) {
@@ -176,6 +176,6 @@
           drawerOverlay.addEventListener("click", onClick);
         });
       }
-    </script>
+      </script>
   </body>
 </html>
