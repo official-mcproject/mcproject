@@ -82,13 +82,13 @@
 .top-menu {
   margin: 0;
   text-align: right;
-  font-size: var(--font-size-base);
   color: var(--color-white);
 }
 .navigation {
   height: 40px;
   width: 317px;
   justify-content: flex-end;
+  font-size: var(--font-size-xl);
   font-family: var(--font-roboto);
 }
 .top-menu {
@@ -96,6 +96,7 @@
   background-color: var(--color-gray);
   justify-content: space-between;
   padding: var(--padding-base) var(--padding-13xl);
+  font-size: var(--font-size-base);
   font-family: var(--font-roboto-slab);
 }
 .connect-play {
@@ -118,7 +119,7 @@
 .open-your-minecraft-container {
   align-self: stretch;
   position: relative;
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-xl);
   line-height: 24px;
   color: #f2f2f2;
   font-family: var(--font-roboto);
@@ -126,7 +127,7 @@
 .connect-play-parent {
   align-self: stretch;
   border-radius: var(--br-5xs);
-  background-color: rgba(6, 142, 53, 0.7);
+  background-color: rgba(6, 142, 53, 0.81);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: column;
@@ -165,7 +166,7 @@
   justify-content: center;
   padding: var(--padding-base);
   text-align: left;
-  font-size: 20px;
+  font-size: var(--font-size-xl);
   color: #393939;
   font-family: var(--font-inter);
 }
@@ -188,7 +189,7 @@
 .playsatoshisquest2 {
   height: 15px;
   position: relative;
-  font-size: 12px;
+  font-size: var(--font-size-base);
   line-height: 15px;
   font-family: var(--font-roboto);
   color: #cacaca;
@@ -199,6 +200,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  gap: 2px;
 }
 .bottom-menu-inner {
   height: 40px;
@@ -250,7 +252,7 @@
   justify-content: space-between;
   padding: var(--padding-13xl);
   text-align: right;
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-xl);
 }
 .home {
   width: 100%;
@@ -260,7 +262,7 @@
   flex-direction: column;
   justify-content: flex-start;
   text-align: center;
-  font-size: 24px;
+  font-size: 28px;
 }
 @media screen and (max-width: 1200px) {
   .navigation {
@@ -342,12 +344,21 @@
   .body {
     padding-top: var(--padding-13xl);
   }
-  .navigation1,
   .playsatoshisquest2,
   .satoshis-quest {
     display: flex;
   }
+  .bottom-menu-inner {
+    display: none;
+  }
+  .navigation1 {
+    display: flex;
+  }
   .bottom-menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     padding-left: var(--padding-base);
     padding-right: var(--padding-base);
     box-sizing: border-box;
