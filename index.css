@@ -73,13 +73,9 @@
   animation: 1s ease-out 0s 1 normal none pulsate;
   opacity: 1;
 }
-.forum,
 .map {
   position: relative;
   line-height: 15px;
-}
-.forum {
-  cursor: pointer;
 }
 .desktop-menu,
 .navigation,
@@ -113,78 +109,12 @@
   font-size: var(--font-size-base);
   font-family: var(--font-roboto-slab);
 }
-.connect-play {
-  align-self: stretch;
-  position: relative;
-  line-height: 32px;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-.open-your-minecraft {
-  font-weight: 300;
-}
-.span {
-  font-family: var(--font-roboto);
-}
-.playsatoshisquest1 {
-  font-weight: 500;
-  color: var(--color-white);
-}
-.open-your-minecraft-container {
-  align-self: stretch;
-  position: relative;
-  font-size: var(--font-size-xl);
-  line-height: 24px;
-  color: #f2f2f2;
-  font-family: var(--font-roboto);
-}
-.connect-play-parent {
-  width: 100%;
-  border-radius: var(--br-5xs);
-  background-color: rgba(6, 142, 53, 0.81);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding: var(--padding-base);
-  box-sizing: border-box;
-  gap: var(--gap-3xs);
-  max-width: 883px;
-}
-.picture-icon {
-  width: 883px;
-  position: relative;
-  height: 497px;
-  object-fit: cover;
-}
-.picture-wrapper {
+.body-child {
+  border: 0;
   align-self: stretch;
   border-radius: var(--br-5xs);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.wimmer-loves-alex {
-  position: relative;
-  line-height: 24px;
-  font-weight: 600;
-}
-.wimmer-loves-alex-ramey-gaming-wrapper {
-  align-self: stretch;
-  background-color: #ffefef;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: center;
-  padding: var(--padding-base);
-  text-align: left;
-  font-size: var(--font-size-xl);
-  color: #393939;
-  font-family: var(--font-inter);
+  background-color: #f4f4f4;
+  height: 305px;
 }
 .body {
   align-self: stretch;
@@ -195,14 +125,13 @@
   align-items: center;
   justify-content: flex-start;
   padding: var(--padding-13xl) var(--padding-45xl);
-  gap: var(--gap-13xl);
 }
 .satoshis-quest {
   position: relative;
   line-height: 15px;
   font-weight: 600;
 }
-.playsatoshisquest2 {
+.playsatoshisquest1 {
   height: 15px;
   position: relative;
   font-size: var(--font-size-base);
@@ -260,18 +189,15 @@
 .navigation1 {
   margin: 0;
   height: 40px;
-  display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: flex-end;
   gap: var(--gap-13xl);
 }
 .bottom-menu,
-.home {
+.forum,
+.navigation1 {
   display: flex;
   align-items: center;
-  color: var(--color-white);
-  font-family: var(--font-roboto-slab);
 }
 .bottom-menu {
   margin: 0;
@@ -282,16 +208,16 @@
   padding: var(--padding-13xl);
   text-align: right;
   font-size: var(--font-size-xl);
+  color: var(--color-white);
+  font-family: var(--font-roboto-slab);
 }
-.home {
+.forum {
   width: 100%;
   position: relative;
   background-color: var(--color-white);
   overflow: hidden;
   flex-direction: column;
   justify-content: flex-start;
-  text-align: center;
-  font-size: 28px;
 }
 @media screen and (max-width: 1200px) {
   .navigation {
@@ -322,7 +248,7 @@
   .body {
     padding-top: var(--padding-13xl);
   }
-  .playsatoshisquest2,
+  .playsatoshisquest1,
   .satoshis-quest {
     display: flex;
   }
@@ -373,7 +299,7 @@
   .body {
     padding-top: var(--padding-13xl);
   }
-  .playsatoshisquest2,
+  .playsatoshisquest1,
   .satoshis-quest {
     display: flex;
   }
@@ -419,23 +345,23 @@
   align-items: center;
   justify-content: center;
 }
-.forum1,
-.guides1 {
+.forum3,
+.guides2 {
   position: relative;
   line-height: 15px;
   font-weight: 600;
 }
-.forum1 {
+.forum3 {
   cursor: pointer;
 }
 .mobile-menu,
-.navigation2 {
+.navigation4 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   box-sizing: border-box;
 }
-.navigation2 {
+.navigation4 {
   margin: 0;
   width: 144px;
   align-items: flex-start;

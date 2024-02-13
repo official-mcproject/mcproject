@@ -201,12 +201,11 @@
 }
 .bottom-menu {
   margin: 0;
-  width: 785px;
+  align-self: stretch;
   background-color: var(--color-gray);
   flex-direction: row;
   justify-content: space-between;
   padding: var(--padding-13xl);
-  box-sizing: border-box;
   text-align: right;
   font-size: var(--font-size-xl);
   color: var(--color-white);
@@ -346,13 +345,13 @@
   align-items: center;
   justify-content: center;
 }
-.forums,
+.forum3,
 .guides2 {
   position: relative;
   line-height: 15px;
   font-weight: 600;
 }
-.forums {
+.forum3 {
   cursor: pointer;
 }
 .mobile-menu,

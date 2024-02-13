@@ -28,9 +28,9 @@ body {
   /* Gaps */
   --gap-13xl: 32px;
   --gap-7xs: 6px;
-  --gap-3xs: 10px;
   --gap-xl: 20px;
   --gap-base: 16px;
+  --gap-3xs: 10px;
 
   /* Paddings */
   --padding-13xl: 32px;

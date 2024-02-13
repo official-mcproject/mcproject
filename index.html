@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
-    <title>Satoshi's Quest</title>
 
     <meta property="og:image" content="public/thumbnail.png" />
 
@@ -24,7 +23,7 @@
     />
   </head>
   <body>
-    <div class="home">
+    <div class="forum">
       <nav class="top-menu">
         <div class="mask-group-1-parent">
           <img
@@ -60,38 +59,24 @@
           <div class="desktop-menu">
             <div class="map">Map</div>
             <div class="map">Guides</div>
-            <div class="forum" id="forumText">Forum</div>
+            <div class="map">Forum</div>
             <div class="map">Stats</div>
             <div class="map">Donate</div>
           </div>
         </nav>
       </nav>
       <div class="body">
-        <div class="connect-play-parent">
-          <div class="connect-play">Connect & Play</div>
-          <div class="open-your-minecraft-container">
-            <span>
-              <span class="open-your-minecraft"
-                >Open your minecraft launcher, click "Multiplayer" and "Add
-                Server", then enter our server IP address:</span
-              >
-              <span class="span"> </span>
-            </span>
-            <span class="playsatoshisquest1">play.satoshis.quest</span>
-          </div>
-        </div>
-        <div class="picture-wrapper">
-          <img class="picture-icon" alt="" src="./public/picture_1@3x.png" />
-        </div>
-        <div class="wimmer-loves-alex-ramey-gaming-wrapper">
-          <div class="wimmer-loves-alex">Wimmer loves Alex Ramey Gaming 🥰</div>
-        </div>
+        <iframe
+          class="body-child"
+          src="https://discord.com/channels/1206856816256880661/1206861630038872094"
+        >
+        </iframe>
       </div>
       <nav class="bottom-menu">
         <div class="bottom-menu-inner">
           <div class="satoshis-quest-parent">
             <div class="satoshis-quest">Satoshi’s Quest</div>
-            <div class="playsatoshisquest2">play.satoshis.quest</div>
+            <div class="playsatoshisquest1">play.satoshis.quest</div>
           </div>
         </div>
         <nav class="navigation1">
@@ -125,12 +110,12 @@
             id="drawergroupIcon"
           />
         </div>
-        <nav class="navigation2">
-          <div class="guides1">Guides</div>
-          <div class="forum1" id="drawerforumText">Forum</div>
-          <div class="guides1">Stats</div>
-          <div class="guides1">Map</div>
-          <div class="guides1">Donate</div>
+        <nav class="navigation4">
+          <div class="guides2">Guides</div>
+          <div class="forum3" id="drawerforumText">Forum</div>
+          <div class="guides2">Stats</div>
+          <div class="guides2">Map</div>
+          <div class="guides2">Donate</div>
         </nav>
       </div>
     </div>
@@ -155,14 +140,14 @@
           }
         });
       }
-      
+
       var drawerforumText = document.getElementById("drawerforumText");
       if (drawerforumText) {
         drawerforumText.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/forum.html";
         });
       }
-      
+
       var drawerforumText = document.getElementById("drawerforumText");
       if (drawerforumText) {
         drawerforumText.addEventListener("click", function (e) {
@@ -182,7 +167,7 @@
           }
         });
       }
-      
+
       var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
       var observer = new IntersectionObserver(
         (entries) => {
@@ -198,18 +183,18 @@
           threshold: 0.15,
         }
       );
-      
+
       for (let i = 0; i < scrollAnimElements.length; i++) {
         observer.observe(scrollAnimElements[i]);
       }
-      
+
       var maskGroup1 = document.getElementById("maskGroup1");
       if (maskGroup1) {
         maskGroup1.addEventListener("click", function (e) {
-          window.location.href = "home.html";
+          window.location.href = "./home.html";
         });
       }
-      
+
       var hamburgerMenuV5Container = document.getElementById(
         "hamburgerMenuV5Container"
       );
@@ -226,7 +211,7 @@
             drawerOverlayStyle.justifyContent = "";
           }
           drawerOverlay.setAttribute("closable", "");
-      
+
           var onClick =
             drawerOverlay.onClick ||
             function (e) {
@@ -240,13 +225,6 @@
           drawerOverlay.addEventListener("click", onClick);
         });
       }
-      
-      var forumText = document.getElementById("forumText");
-      if (forumText) {
-        forumText.addEventListener("click", function (e) {
-          window.location.href = "./forum.html";
-        });
-      }
-      </script>
+    </script>
   </body>
 </html>
