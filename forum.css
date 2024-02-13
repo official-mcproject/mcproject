@@ -51,34 +51,34 @@
   justify-content: flex-start;
   gap: var(--gap-base);
 }
-.hamburger-menu-v5-child,
-.hamburger-menu-v5-item {
+.hamburger-menu-v5-child1,
+.rectangle-icon {
   width: 31.8px;
   position: relative;
   border-radius: var(--br-31xl);
   height: 4.2px;
 }
-.hamburger-menu-v5-item {
+.hamburger-menu-v5-child1 {
   height: 3.6px;
 }
-.hamburger-menu-v5 {
+.hamburger-menu-v51 {
   height: 24px;
   display: none;
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-between;
 }
-.hamburger-menu-v5:active {
+.hamburger-menu-v51:active {
   cursor: auto;
   animation: 1s ease-out 0s 1 normal none pulsate;
   opacity: 1;
 }
-.map1 {
+.map2 {
   position: relative;
   line-height: 15px;
 }
 .desktop-menu1,
-.navigation2,
+.navigation3,
 .top-menu1 {
   display: flex;
   flex-direction: row;
@@ -88,13 +88,13 @@
   justify-content: flex-end;
   gap: var(--gap-xl);
 }
-.navigation2,
+.navigation3,
 .top-menu1 {
   margin: 0;
   text-align: right;
   color: var(--color-white);
 }
-.navigation2 {
+.navigation3 {
   height: 40px;
   width: 317px;
   justify-content: flex-end;
@@ -145,7 +145,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  gap: var(--gap-11xs);
+  gap: var(--gap-7xs);
 }
 .bottom-menu-child {
   height: 40px;
@@ -154,14 +154,28 @@
   align-items: center;
   justify-content: flex-start;
 }
-.icon-discord1,
-.icon-instagram1 {
+.vector-icon1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.icon-discord1 {
+  text-decoration: none;
   width: 21.7px;
   position: relative;
   height: 24px;
 }
 .icon-instagram1 {
   width: 24px;
+  position: relative;
+  height: 24px;
 }
 .icon-facebook1,
 .icon-twitter1 {
@@ -172,7 +186,7 @@
 .icon-twitter1 {
   width: 29.5px;
 }
-.navigation3 {
+.navigation4 {
   margin: 0;
   height: 40px;
   flex-direction: row;
@@ -180,8 +194,8 @@
   gap: var(--gap-13xl);
 }
 .bottom-menu1,
-.forum1,
-.navigation3 {
+.forum2,
+.navigation4 {
   display: flex;
   align-items: center;
 }
@@ -197,7 +211,7 @@
   color: var(--color-white);
   font-family: var(--font-roboto-slab);
 }
-.forum1 {
+.forum2 {
   width: 100%;
   position: relative;
   background-color: var(--color-white);
@@ -206,7 +220,7 @@
   justify-content: flex-start;
 }
 @media screen and (max-width: 1200px) {
-  .navigation2 {
+  .navigation3 {
     display: flex;
   }
   .bottom-menu1,
@@ -217,12 +231,12 @@
   }
 }
 @media screen and (max-width: 960px) {
-  .hamburger-menu-v5,
+  .hamburger-menu-v51,
   .playsatoshisquest3 {
     display: flex;
   }
   .desktop-menu1,
-  .navigation2 {
+  .navigation3 {
     display: none;
   }
   .body1,
@@ -249,7 +263,7 @@
   .playsatoshisquest3 {
     display: none;
   }
-  .hamburger-menu-v5:active {
+  .hamburger-menu-v51:active {
     animation: 1s ease-in 0s 1 normal none pulsate;
     opacity: 1;
   }
@@ -292,7 +306,7 @@
   .bottom-menu-child {
     display: none;
   }
-  .navigation3 {
+  .navigation4 {
     display: flex;
   }
   .bottom-menu1 {
@@ -331,23 +345,23 @@
   align-items: center;
   justify-content: center;
 }
-.forums,
-.guides2 {
+.forum1,
+.guides1 {
   position: relative;
   line-height: 15px;
   font-weight: 600;
 }
-.forums {
+.forum1 {
   cursor: pointer;
 }
 .mobile-menu,
-.navigation4 {
+.navigation2 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   box-sizing: border-box;
 }
-.navigation4 {
+.navigation2 {
   margin: 0;
   width: 144px;
   align-items: flex-start;
@@ -355,13 +369,13 @@
   gap: 24px;
   text-align: right;
   font-size: var(--font-size-base);
-  color: var(--color-black);
+  color: var(--color-white);
   font-family: var(--font-inter);
 }
 .mobile-menu {
   width: 200px;
   position: relative;
-  background-color: var(--color-white);
+  background-color: rgba(0, 0, 0, 0.85);
   align-items: flex-end;
   padding: var(--padding-base) var(--padding-13xl);
   gap: var(--gap-3xs);

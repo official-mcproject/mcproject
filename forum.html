@@ -23,7 +23,7 @@
     />
   </head>
   <body>
-    <div class="forum1">
+    <div class="forum2">
       <nav class="top-menu1">
         <div class="mask-group-1-group">
           <img
@@ -36,32 +36,24 @@
 
           <div class="playsatoshisquest3">play.satoshis.quest</div>
         </div>
-        <div class="hamburger-menu-v5" id="hamburgerMenuV5Container">
-          <img
-            class="hamburger-menu-v5-child"
-            alt=""
-            src="./public/rectangle-19.svg"
-          />
+        <div class="hamburger-menu-v51" id="hamburgerMenuV5Container">
+          <img class="rectangle-icon" alt="" src="./public/rectangle-19.svg" />
 
           <img
-            class="hamburger-menu-v5-item"
+            class="hamburger-menu-v5-child1"
             alt=""
             src="./public/rectangle-18.svg"
           />
 
-          <img
-            class="hamburger-menu-v5-child"
-            alt=""
-            src="./public/rectangle-17.svg"
-          />
+          <img class="rectangle-icon" alt="" src="./public/rectangle-17.svg" />
         </div>
-        <nav class="navigation2">
+        <nav class="navigation3">
           <div class="desktop-menu1">
-            <div class="map1">Map</div>
-            <div class="map1">Guides</div>
-            <div class="map1">Forum</div>
-            <div class="map1">Stats</div>
-            <div class="map1">Donate</div>
+            <div class="map2">Map</div>
+            <div class="map2">Guides</div>
+            <div class="map2">Forum</div>
+            <div class="map2">Stats</div>
+            <div class="map2">Donate</div>
           </div>
         </nav>
       </nav>
@@ -79,9 +71,14 @@
             <div class="playsatoshisquest4">play.satoshis.quest</div>
           </div>
         </div>
-        <nav class="navigation3">
-          <img class="icon-discord1" alt="" src="./public/-icon-discord.svg" />
-
+        <nav class="navigation4">
+          <a
+            class="icon-discord1"
+            href="https://discord.gg/DYvq2wpfyz"
+            target="_blank"
+          >
+            <img class="vector-icon1" alt="" src="./public/-icon-discord.svg" />
+          </a>
           <img
             class="icon-instagram1"
             alt=""
@@ -109,12 +106,12 @@
             id="drawergroupIcon"
           />
         </div>
-        <nav class="navigation4">
-          <div class="guides2">Guides</div>
-          <div class="forums" id="drawerforumsText">Forums</div>
-          <div class="guides2">Stats</div>
-          <div class="guides2">Map</div>
-          <div class="guides2">Donate</div>
+        <nav class="navigation2">
+          <div class="guides1">Guides</div>
+          <div class="forum1" id="drawerforumText">Forum</div>
+          <div class="guides1">Stats</div>
+          <div class="guides1">Map</div>
+          <div class="guides1">Donate</div>
         </nav>
       </div>
     </div>
@@ -140,12 +137,33 @@
         });
       }
       
-      var drawerforumsText = document.getElementById("drawerforumsText");
-      if (drawerforumsText) {
-        drawerforumsText.addEventListener("click", function (e) {
-          window.location.href = "./forum.html";
+      var drawerforumText = document.getElementById("drawerforumText");
+      if (drawerforumText) {
+        drawerforumText.addEventListener("click", function () {
+          window.location.href = "https://satoshis.quest/forum.html";
         });
       }
+      
+      var drawerforumText = document.getElementById("drawerforumText");
+      if (drawerforumText) {
+        drawerforumText.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+      
       var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
       var observer = new IntersectionObserver(
         (entries) => {
@@ -168,8 +186,8 @@
       
       var maskGroup1 = document.getElementById("maskGroup1");
       if (maskGroup1) {
-        maskGroup1.addEventListener("click", function () {
-          window.location.href = "https://satoshis.quest/";
+        maskGroup1.addEventListener("click", function (e) {
+          window.location.href = "home.html";
         });
       }
       
