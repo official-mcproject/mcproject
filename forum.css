@@ -31,7 +31,7 @@
     opacity: 1;
   }
 }
-.mask-group-1 {
+.mask-group-11 {
   width: 24px;
   position: relative;
   border-radius: var(--br-9xs);
@@ -39,11 +39,11 @@
   object-fit: cover;
   cursor: pointer;
 }
-.playsatoshisquest {
+.playsatoshisquest3 {
   position: relative;
   line-height: 15px;
 }
-.mask-group-1-parent {
+.mask-group-1-group {
   height: 40px;
   display: flex;
   flex-direction: row;
@@ -51,51 +51,57 @@
   justify-content: flex-start;
   gap: var(--gap-base);
 }
-.hamburger-menu-v5-icon {
-  height: 24px;
+.hamburger-menu-v5-child,
+.hamburger-menu-v5-item {
+  width: 31.8px;
   position: relative;
-  max-width: 100%;
-  overflow: hidden;
-  display: none;
+  border-radius: var(--br-31xl);
+  height: 4.2px;
 }
-.hamburger-menu-v5-icon:active {
+.hamburger-menu-v5-item {
+  height: 3.6px;
+}
+.hamburger-menu-v5 {
+  height: 24px;
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.hamburger-menu-v5:active {
   cursor: auto;
   animation: 1s ease-out 0s 1 normal none pulsate;
   opacity: 1;
 }
-.forum,
-.map {
+.map2 {
   position: relative;
   line-height: 15px;
 }
-.forum {
-  cursor: pointer;
-}
-.desktop-menu,
-.navigation,
-.top-menu {
+.desktop-menu1,
+.navigation3,
+.top-menu1 {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.desktop-menu {
+.desktop-menu1 {
   justify-content: flex-end;
   gap: var(--gap-xl);
 }
-.navigation,
-.top-menu {
+.navigation3,
+.top-menu1 {
   margin: 0;
   text-align: right;
   color: var(--color-white);
 }
-.navigation {
+.navigation3 {
   height: 40px;
   width: 317px;
   justify-content: flex-end;
   font-size: var(--font-size-xl);
   font-family: var(--font-roboto);
 }
-.top-menu {
+.top-menu1 {
   align-self: stretch;
   background-color: var(--color-gray);
   justify-content: space-between;
@@ -103,78 +109,14 @@
   font-size: var(--font-size-base);
   font-family: var(--font-roboto-slab);
 }
-.connect-play {
-  align-self: stretch;
-  position: relative;
-  line-height: 32px;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-.open-your-minecraft {
-  font-weight: 300;
-}
-.span {
-  font-family: var(--font-roboto);
-}
-.playsatoshisquest1 {
-  font-weight: 500;
-  color: var(--color-white);
-}
-.open-your-minecraft-container {
-  align-self: stretch;
-  position: relative;
-  font-size: var(--font-size-xl);
-  line-height: 24px;
-  color: #f2f2f2;
-  font-family: var(--font-roboto);
-}
-.connect-play-parent {
+.body-child {
+  border: 0;
   align-self: stretch;
   border-radius: var(--br-5xs);
-  background-color: rgba(6, 142, 53, 0.81);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding: var(--padding-base);
-  gap: var(--gap-3xs);
+  background-color: #f4f4f4;
+  height: 305px;
 }
-.picture-icon {
-  width: 883px;
-  position: relative;
-  height: 497px;
-  object-fit: cover;
-}
-.picture-wrapper {
-  align-self: stretch;
-  border-radius: var(--br-5xs);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.wimmer-loves-alex {
-  position: relative;
-  line-height: 24px;
-  font-weight: 600;
-}
-.wimmer-loves-alex-ramey-gaming-wrapper {
-  align-self: stretch;
-  background-color: #ffefef;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: center;
-  padding: var(--padding-base);
-  text-align: left;
-  font-size: var(--font-size-xl);
-  color: #393939;
-  font-family: var(--font-inter);
-}
-.body {
+.body1 {
   align-self: stretch;
   background-color: var(--color-white);
   overflow: hidden;
@@ -183,14 +125,13 @@
   align-items: center;
   justify-content: flex-start;
   padding: var(--padding-13xl) var(--padding-45xl);
-  gap: var(--gap-13xl);
 }
-.satoshis-quest {
+.satoshis-quest1 {
   position: relative;
   line-height: 15px;
   font-weight: 600;
 }
-.playsatoshisquest2 {
+.playsatoshisquest4 {
   height: 15px;
   position: relative;
   font-size: var(--font-size-base);
@@ -199,56 +140,52 @@
   color: var(--color-lightgray);
   display: inline-block;
 }
-.satoshis-quest-parent {
+.satoshis-quest-group {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   gap: var(--gap-11xs);
 }
-.bottom-menu-inner {
+.bottom-menu-child {
   height: 40px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
 }
-.icon-discord {
+.icon-discord1,
+.icon-instagram1 {
   width: 21.7px;
   position: relative;
   height: 24px;
 }
-.icon-facebook,
-.icon-instagram,
-.icon-twitter {
+.icon-instagram1 {
   width: 24px;
+}
+.icon-facebook1,
+.icon-twitter1 {
+  width: 24.1px;
   position: relative;
   height: 24px;
 }
-.icon-facebook,
-.icon-twitter {
-  width: 24.1px;
-}
-.icon-twitter {
+.icon-twitter1 {
   width: 29.5px;
 }
-.navigation1 {
+.navigation4 {
   margin: 0;
   height: 40px;
-  display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: flex-end;
   gap: var(--gap-13xl);
 }
-.bottom-menu,
-.home {
+.bottom-menu1,
+.forum1,
+.navigation4 {
   display: flex;
   align-items: center;
-  color: var(--color-white);
-  font-family: var(--font-roboto-slab);
 }
-.bottom-menu {
+.bottom-menu1 {
   margin: 0;
   align-self: stretch;
   background-color: var(--color-gray);
@@ -257,62 +194,62 @@
   padding: var(--padding-13xl);
   text-align: right;
   font-size: var(--font-size-xl);
+  color: var(--color-white);
+  font-family: var(--font-roboto-slab);
 }
-.home {
+.forum1 {
   width: 100%;
   position: relative;
   background-color: var(--color-white);
   overflow: hidden;
   flex-direction: column;
   justify-content: flex-start;
-  text-align: center;
-  font-size: 28px;
 }
 @media screen and (max-width: 1200px) {
-  .navigation {
+  .navigation3 {
     display: flex;
   }
-  .bottom-menu,
-  .top-menu {
+  .bottom-menu1,
+  .top-menu1 {
     padding-left: var(--padding-45xl);
     padding-right: var(--padding-45xl);
     box-sizing: border-box;
   }
 }
 @media screen and (max-width: 960px) {
-  .hamburger-menu-v5-icon,
-  .playsatoshisquest {
+  .hamburger-menu-v5,
+  .playsatoshisquest3 {
     display: flex;
   }
-  .desktop-menu,
-  .navigation {
+  .desktop-menu1,
+  .navigation3 {
     display: none;
   }
-  .body,
-  .top-menu {
+  .body1,
+  .top-menu1 {
     padding-left: var(--padding-13xl);
     padding-right: var(--padding-13xl);
     box-sizing: border-box;
   }
-  .body {
+  .body1 {
     padding-top: var(--padding-13xl);
   }
-  .playsatoshisquest2,
-  .satoshis-quest {
+  .playsatoshisquest4,
+  .satoshis-quest1 {
     display: flex;
   }
-  .bottom-menu {
+  .bottom-menu1 {
     padding-left: var(--padding-13xl);
     padding-right: var(--padding-13xl);
     box-sizing: border-box;
   }
 }
 @media screen and (max-width: 420px) {
-  .desktop-menu,
-  .playsatoshisquest {
+  .desktop-menu1,
+  .playsatoshisquest3 {
     display: none;
   }
-  .hamburger-menu-v5-icon:active {
+  .hamburger-menu-v5:active {
     animation: 1s ease-in 0s 1 normal none pulsate;
     opacity: 1;
   }
@@ -339,26 +276,26 @@
       animation-timing-function: ease-out;
     }
   }
-  .body,
-  .top-menu {
+  .body1,
+  .top-menu1 {
     padding-left: var(--padding-base);
     padding-right: var(--padding-base);
     box-sizing: border-box;
   }
-  .body {
+  .body1 {
     padding-top: var(--padding-13xl);
   }
-  .playsatoshisquest2,
-  .satoshis-quest {
+  .playsatoshisquest4,
+  .satoshis-quest1 {
     display: flex;
   }
-  .bottom-menu-inner {
+  .bottom-menu-child {
     display: none;
   }
-  .navigation1 {
+  .navigation4 {
     display: flex;
   }
-  .bottom-menu {
+  .bottom-menu1 {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
@@ -369,7 +306,7 @@
   }
 }
 @media screen and (max-width: 350px) {
-  .body {
+  .body1 {
     padding-left: var(--padding-base);
     padding-top: var(--padding-13xl);
     padding-right: var(--padding-base);

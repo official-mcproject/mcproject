@@ -34,7 +34,7 @@
       </div>
       <nav class="navigation2">
         <div class="guides1">Guides</div>
-        <div class="guides1">Forums</div>
+        <div class="forums" id="drawerforumsText">Forums</div>
         <div class="guides1">Stats</div>
         <div class="guides1">Map</div>
         <div class="guides1">Donate</div>
@@ -61,7 +61,13 @@
           }
         });
       }
-      
+
+      var drawerforumsText = document.getElementById("drawerforumsText");
+      if (drawerforumsText) {
+        drawerforumsText.addEventListener("click", function (e) {
+          window.location.href = "./forum.html";
+        });
+      }
       var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
       var observer = new IntersectionObserver(
         (entries) => {
@@ -77,10 +83,10 @@
           threshold: 0.15,
         }
       );
-      
+
       for (let i = 0; i < scrollAnimElements.length; i++) {
         observer.observe(scrollAnimElements[i]);
       }
-      </script>
+    </script>
   </body>
 </html>
