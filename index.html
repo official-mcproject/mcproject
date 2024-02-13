@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./index.css" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
     />
   </head>
   <body>
@@ -45,6 +45,9 @@
         </nav>
       </nav>
       <div class="body">
+        <div class="wimmer-loves-alex-ramey-gaming-wrapper">
+          <div class="wimmer-loves-alex">Wimmer loves Alex Ramey Gaming</div>
+        </div>
         <div class="picture-wrapper">
           <img class="picture-icon" alt="" src="./public/picture_1@3x.png" />
         </div>
@@ -97,7 +100,7 @@
           }
         });
       }
-      
+
       var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
       var observer = new IntersectionObserver(
         (entries) => {
@@ -113,11 +116,11 @@
           threshold: 0.15,
         }
       );
-      
+
       for (let i = 0; i < scrollAnimElements.length; i++) {
         observer.observe(scrollAnimElements[i]);
       }
-      
+
       var hamburgerMenuV3Icon = document.getElementById("hamburgerMenuV3Icon");
       if (hamburgerMenuV3Icon) {
         hamburgerMenuV3Icon.addEventListener("click", function () {
@@ -132,7 +135,7 @@
             drawerOverlayStyle.justifyContent = "";
           }
           drawerOverlay.setAttribute("closable", "");
-      
+
           var onClick =
             drawerOverlay.onClick ||
             function (e) {
@@ -146,6 +149,6 @@
           drawerOverlay.addEventListener("click", onClick);
         });
       }
-      </script>
+    </script>
   </body>
 </html>

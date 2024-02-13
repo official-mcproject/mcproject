@@ -73,3 +73,9 @@
 .mobile-menu.animate {
   animation: 0.25s ease 0s 1 normal forwards slide-in-right;
 }
+@media screen and (max-width: 420px) {
+  .mobile-menu {
+    padding-right: var(--padding-base);
+    box-sizing: border-box;
+  }
+}
