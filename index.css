@@ -15,29 +15,51 @@
   justify-content: flex-start;
   gap: 16px;
 }
-.guides1 {
+.hamburger-menu-icon {
+  height: 16px;
+  width: 16px;
   position: relative;
+  display: none;
+}
+.donate,
+.forums,
+.guides,
+.map,
+.stats {
+  position: absolute;
+  top: 0;
+  left: 0;
   line-height: 15px;
-  margin-top: -15px;
 }
-.frame,
-.navigation,
-.top-menu {
-  display: flex;
-  align-items: center;
+.donate,
+.forums,
+.map,
+.stats {
+  left: 73px;
 }
-.frame {
-  width: 53px;
+.donate,
+.map,
+.stats {
+  left: 149px;
+}
+.donate,
+.map {
+  left: 209px;
+}
+.donate {
+  left: 262px;
+}
+.desktop-menu {
+  width: 317px;
+  position: relative;
   height: 15px;
-  overflow: hidden;
-  flex-shrink: 0;
-  flex-direction: column;
-  justify-content: flex-start;
 }
 .navigation,
 .top-menu {
   margin: 0;
+  display: flex;
   flex-direction: row;
+  align-items: center;
   text-align: right;
   font-size: var(--font-size-base);
   color: var(--color-white);
@@ -46,7 +68,7 @@
 .navigation {
   width: 317px;
   height: 15px;
-  justify-content: flex-start;
+  justify-content: flex-end;
   gap: 20px;
 }
 .top-menu {
@@ -86,4 +108,25 @@
 .home {
   width: 100%;
   position: relative;
+}
+@media screen and (max-width: 1200px) {
+  .hamburger-menu-icon {
+    display: none;
+  }
+}
+@media screen and (max-width: 960px) {
+  .hamburger-menu-icon {
+    display: flex;
+  }
+  .desktop-menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 420px) {
+  .hamburger-menu-icon {
+    display: flex;
+  }
+  .desktop-menu {
+    display: none;
+  }
 }
