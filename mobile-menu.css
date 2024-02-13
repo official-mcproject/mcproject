@@ -1,3 +1,26 @@
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    transform-origin: center center;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    transform: scale(0.91);
+    animation-timing-function: ease-in;
+  }
+  17% {
+    transform: scale(0.98);
+    animation-timing-function: ease-out;
+  }
+  33% {
+    transform: scale(0.87);
+    animation-timing-function: ease-in;
+  }
+  45% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}
 @keyframes slide-in-right {
   0% {
     transform: translateX(200px);
@@ -14,11 +37,16 @@
   height: 24px;
   cursor: pointer;
 }
+.close-icon-child:active {
+  animation: 1s ease 0s 1 normal none pulsate;
+  opacity: 1;
+}
 .close-icon {
+  width: 31.8px;
   height: 40px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
 }
 .guides1 {
@@ -60,6 +88,33 @@
   animation: 0.25s ease 0s 1 normal forwards slide-in-right;
 }
 @media screen and (max-width: 420px) {
+  .close-icon-child:active {
+    animation: 1s ease-in 0s 1 normal none pulsate;
+    opacity: 1;
+  }
+  @keyframes pulsate {
+    0% {
+      transform: scale(1);
+      transform-origin: center center;
+      animation-timing-function: ease-out;
+    }
+    10% {
+      transform: scale(0.91);
+      animation-timing-function: ease-in;
+    }
+    17% {
+      transform: scale(0.98);
+      animation-timing-function: ease-out;
+    }
+    33% {
+      transform: scale(0.87);
+      animation-timing-function: ease-in;
+    }
+    45% {
+      transform: scale(1);
+      animation-timing-function: ease-out;
+    }
+  }
   .mobile-menu {
     padding-right: var(--padding-base);
     box-sizing: border-box;

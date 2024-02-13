@@ -1,3 +1,26 @@
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    transform-origin: center center;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    transform: scale(0.91);
+    animation-timing-function: ease-in;
+  }
+  17% {
+    transform: scale(0.98);
+    animation-timing-function: ease-out;
+  }
+  33% {
+    transform: scale(0.87);
+    animation-timing-function: ease-in;
+  }
+  45% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}
 @keyframes slide-in-right {
   0% {
     transform: translateX(200px);
@@ -11,6 +34,7 @@
 .mask-group-1 {
   width: 24px;
   position: relative;
+  border-radius: 4px;
   height: 24px;
   object-fit: cover;
   cursor: pointer;
@@ -27,12 +51,17 @@
   justify-content: flex-start;
   gap: 16px;
 }
-.top-menu-child {
+.hamburger-menu-v5-icon {
   height: 24px;
   position: relative;
   max-width: 100%;
   overflow: hidden;
   display: none;
+}
+.hamburger-menu-v5-icon:active {
+  cursor: auto;
+  animation: 1s ease-out 0s 1 normal none pulsate;
+  opacity: 1;
 }
 .donate,
 .forums,
@@ -96,11 +125,14 @@
   font-weight: 600;
 }
 .wimmer-loves-alex-ramey-gaming-wrapper {
+  align-self: stretch;
+  background-color: #f4f4f4;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: center;
+  padding: var(--padding-base);
 }
 .picture-icon {
   width: 883px;
@@ -195,8 +227,8 @@
   }
 }
 @media screen and (max-width: 960px) {
-  .playsatoshisquest,
-  .top-menu-child {
+  .hamburger-menu-v5-icon,
+  .playsatoshisquest {
     display: flex;
   }
   .desktop-menu,
@@ -219,6 +251,33 @@
   .playsatoshisquest {
     display: none;
   }
+  .hamburger-menu-v5-icon:active {
+    animation: 1s ease-in 0s 1 normal none pulsate;
+    opacity: 1;
+  }
+  @keyframes pulsate {
+    0% {
+      transform: scale(1);
+      transform-origin: center center;
+      animation-timing-function: ease-out;
+    }
+    10% {
+      transform: scale(0.91);
+      animation-timing-function: ease-in;
+    }
+    17% {
+      transform: scale(0.98);
+      animation-timing-function: ease-out;
+    }
+    33% {
+      transform: scale(0.87);
+      animation-timing-function: ease-in;
+    }
+    45% {
+      transform: scale(1);
+      animation-timing-function: ease-out;
+    }
+  }
   .body,
   .top-menu {
     padding-left: var(--padding-base);
@@ -231,6 +290,9 @@
   .playsatoshisquest1,
   .satoshis-quest {
     display: none;
+  }
+  .navigation1 {
+    display: flex;
   }
 }
 @media screen and (max-width: 350px) {
@@ -247,11 +309,16 @@
   height: 24px;
   cursor: pointer;
 }
+.close-icon-child:active {
+  animation: 1s ease 0s 1 normal none pulsate;
+  opacity: 1;
+}
 .close-icon {
+  width: 31.8px;
   height: 40px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
 }
 .guides1 {
@@ -293,6 +360,33 @@
   animation: 0.25s ease 0s 1 normal forwards slide-in-right;
 }
 @media screen and (max-width: 420px) {
+  .close-icon-child:active {
+    animation: 1s ease-in 0s 1 normal none pulsate;
+    opacity: 1;
+  }
+  @keyframes pulsate {
+    0% {
+      transform: scale(1);
+      transform-origin: center center;
+      animation-timing-function: ease-out;
+    }
+    10% {
+      transform: scale(0.91);
+      animation-timing-function: ease-in;
+    }
+    17% {
+      transform: scale(0.98);
+      animation-timing-function: ease-out;
+    }
+    33% {
+      transform: scale(0.87);
+      animation-timing-function: ease-in;
+    }
+    45% {
+      transform: scale(1);
+      animation-timing-function: ease-out;
+    }
+  }
   .mobile-menu {
     padding-right: var(--padding-base);
     box-sizing: border-box;

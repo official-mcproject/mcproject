@@ -29,10 +29,10 @@
           <div class="playsatoshisquest">play.satoshis.quest</div>
         </div>
         <img
-          class="top-menu-child"
+          class="hamburger-menu-v5-icon"
           alt=""
           src="./public/frame-23.svg"
-          id="frameIcon"
+          id="hamburgerMenuV5Icon"
         />
 
         <nav class="navigation">
@@ -119,7 +119,7 @@
           }
         });
       }
-      
+
       var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
       var observer = new IntersectionObserver(
         (entries) => {
@@ -135,21 +135,21 @@
           threshold: 0.15,
         }
       );
-      
+
       for (let i = 0; i < scrollAnimElements.length; i++) {
         observer.observe(scrollAnimElements[i]);
       }
-      
+
       var maskGroup1 = document.getElementById("maskGroup1");
       if (maskGroup1) {
         maskGroup1.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/";
         });
       }
-      
-      var frameIcon = document.getElementById("frameIcon");
-      if (frameIcon) {
-        frameIcon.addEventListener("click", function () {
+
+      var hamburgerMenuV5Icon = document.getElementById("hamburgerMenuV5Icon");
+      if (hamburgerMenuV5Icon) {
+        hamburgerMenuV5Icon.addEventListener("click", function () {
           var drawerOverlay = document.getElementById("mobileMenu");
           if (!drawerOverlay) return;
           var drawerOverlayStyle = drawerOverlay.style;
@@ -161,7 +161,7 @@
             drawerOverlayStyle.justifyContent = "";
           }
           drawerOverlay.setAttribute("closable", "");
-      
+
           var onClick =
             drawerOverlay.onClick ||
             function (e) {
@@ -175,6 +175,6 @@
           drawerOverlay.addEventListener("click", onClick);
         });
       }
-      </script>
+    </script>
   </body>
 </html>
