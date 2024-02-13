@@ -65,7 +65,7 @@
   margin: 0;
   width: 144px;
   align-items: flex-start;
-  padding: var(--padding-base) 0 0 8px;
+  padding: var(--padding-base) 0 0;
   gap: 24px;
   text-align: right;
   font-size: var(--font-size-base);

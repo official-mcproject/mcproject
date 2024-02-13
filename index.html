@@ -37,11 +37,11 @@
 
         <nav class="navigation">
           <div class="desktop-menu">
-            <div class="guides">Guides</div>
-            <div class="forums">Forums</div>
-            <div class="stats">Stats</div>
             <div class="map">Map</div>
-            <div class="donate">Donate</div>
+            <div class="map">Guides</div>
+            <div class="map">Forums</div>
+            <div class="map">Stats</div>
+            <div class="map">Donate</div>
           </div>
         </nav>
       </nav>
@@ -64,6 +64,8 @@
           </div>
         </div>
         <nav class="navigation1">
+          <img class="icon-discord" alt="" src="./public/-icon-discord.svg" />
+
           <img
             class="icon-instagram"
             alt=""
@@ -71,8 +73,6 @@
           />
 
           <img class="icon-facebook" alt="" src="./public/-icon-facebook.svg" />
-
-          <img class="icon-discord" alt="" src="./public/-icon-discord.svg" />
 
           <img class="icon-twitter" alt="" src="./public/-icon-twitter.svg" />
         </nav>
@@ -119,7 +119,7 @@
           }
         });
       }
-
+      
       var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
       var observer = new IntersectionObserver(
         (entries) => {
@@ -135,18 +135,18 @@
           threshold: 0.15,
         }
       );
-
+      
       for (let i = 0; i < scrollAnimElements.length; i++) {
         observer.observe(scrollAnimElements[i]);
       }
-
+      
       var maskGroup1 = document.getElementById("maskGroup1");
       if (maskGroup1) {
         maskGroup1.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/";
         });
       }
-
+      
       var hamburgerMenuV5Icon = document.getElementById("hamburgerMenuV5Icon");
       if (hamburgerMenuV5Icon) {
         hamburgerMenuV5Icon.addEventListener("click", function () {
@@ -156,12 +156,12 @@
           if (drawerOverlayStyle) {
             drawerOverlayStyle.display = "flex";
             drawerOverlayStyle.zIndex = 99;
-            drawerOverlayStyle.backgroundColor = "rgba(112, 112, 112, 0.5)";
+            drawerOverlayStyle.backgroundColor = "rgba(112, 112, 112, 0.7)";
             drawerOverlayStyle.alignItems = "flex-end";
             drawerOverlayStyle.justifyContent = "";
           }
           drawerOverlay.setAttribute("closable", "");
-
+      
           var onClick =
             drawerOverlay.onClick ||
             function (e) {
@@ -175,6 +175,6 @@
           drawerOverlay.addEventListener("click", onClick);
         });
       }
-    </script>
+      </script>
   </body>
 </html>
