@@ -2,27 +2,3 @@ body {
   margin: 0;
   line-height: normal;
 }
-
-:root {
-  /* fonts */
-  --font-outfit: Outfit;
-
-  /* font sizes */
-  --font-size-5xl: 24px;
-  --font-size-sm: 14px;
-  --font-size-xl: 20px;
-  --font-size-13xl: 32px;
-  --font-size-base: 16px;
-
-  /* Colors */
-  --color-gray-100: #282828;
-  --color-gray-200: rgba(0, 0, 0, 0.4);
-  --color-gray-300: rgba(255, 255, 255, 0.6);
-  --color-gray-400: rgba(255, 255, 255, 0.5);
-  --color-white: #fff;
-  --color-darkslategray: rgba(61, 61, 61, 0.75);
-  --color-darkgreen: #007100;
-
-  /* Border radiuses */
-  --br-xl: 20px;
-}
