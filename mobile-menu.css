@@ -1,0 +1,75 @@
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.close-icon {
+  width: 20px;
+  position: relative;
+  height: 20px;
+  cursor: pointer;
+}
+.guides1,
+.guides2,
+.guides3 {
+  position: relative;
+  line-height: 15px;
+}
+.guides2,
+.guides3 {
+  margin-top: -15px;
+}
+.guides3 {
+  font-weight: 500;
+}
+.frame {
+  width: 53px;
+  height: 15px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.forums1 {
+  position: relative;
+  line-height: 15px;
+  font-weight: 500;
+}
+.mobile-menu,
+.navigation1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.navigation1 {
+  margin: 0;
+  width: 144px;
+  align-items: flex-start;
+  gap: var(--gap-xl);
+  text-align: right;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+.mobile-menu {
+  position: relative;
+  background-color: var(--color-white);
+  align-items: flex-end;
+  padding: var(--padding-base) var(--padding-13xl) var(--padding-13xl);
+  box-sizing: border-box;
+  gap: var(--gap-13xl);
+  opacity: 0;
+  height: 100%;
+  max-width: 90%;
+  overflow: auto;
+}
+.mobile-menu.animate {
+  animation: 0.25s ease 0s 1 normal forwards slide-in-right;
+}

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./index.css" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
     />
   </head>
   <body>
@@ -28,12 +28,25 @@
           <div class="playsatoshisquest">play.satoshis.quest</div>
         </div>
         <nav class="navigation">
-          <img
-            class="hamburger-menu-icon"
-            alt=""
-            src="./public/hamburger-menu.svg"
-          />
+          <div class="hamburger-menu-v2" id="hamburgerMenuV2Container">
+            <img
+              class="hamburger-menu-v2-child"
+              alt=""
+              src="./public/rectangle-10.svg"
+            />
 
+            <img
+              class="hamburger-menu-v2-child"
+              alt=""
+              src="./public/rectangle-9.svg"
+            />
+
+            <img
+              class="hamburger-menu-v2-child"
+              alt=""
+              src="./public/rectangle-10.svg"
+            />
+          </div>
           <div class="desktop-menu">
             <div class="guides">Guides</div>
             <div class="forums">Forums</div>
@@ -52,5 +65,101 @@
         </div>
       </div>
     </div>
+
+    <div id="mobileMenu" class="popup-overlay" style="display: none">
+      <div class="mobile-menu" data-animate-on-scroll>
+        <img
+          class="close-icon"
+          alt=""
+          src="./public/close.svg"
+          id="drawercloseIcon"
+        />
+
+        <nav class="navigation1">
+          <div class="frame">
+            <div class="guides1">Guides</div>
+            <div class="guides2">Guides</div>
+            <div class="guides3">Guides</div>
+          </div>
+          <div class="forums1">Forums</div>
+          <div class="forums1">Stats</div>
+          <div class="forums1">Map</div>
+          <div class="forums1">Donate</div>
+        </nav>
+      </div>
+    </div>
+
+    <script>
+      var drawercloseIcon = document.getElementById("drawercloseIcon");
+      if (drawercloseIcon) {
+        drawercloseIcon.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+
+      var hamburgerMenuV2Container = document.getElementById(
+        "hamburgerMenuV2Container"
+      );
+      if (hamburgerMenuV2Container) {
+        hamburgerMenuV2Container.addEventListener("click", function () {
+          var drawerOverlay = document.getElementById("mobileMenu");
+          if (!drawerOverlay) return;
+          var drawerOverlayStyle = drawerOverlay.style;
+          if (drawerOverlayStyle) {
+            drawerOverlayStyle.display = "flex";
+            drawerOverlayStyle.zIndex = 99;
+            drawerOverlayStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+            drawerOverlayStyle.alignItems = "flex-end";
+            drawerOverlayStyle.justifyContent = "";
+          }
+          drawerOverlay.setAttribute("closable", "");
+
+          var onClick =
+            drawerOverlay.onClick ||
+            function (e) {
+              if (
+                e.target === drawerOverlay &&
+                drawerOverlay.hasAttribute("closable")
+              ) {
+                drawerOverlayStyle.display = "none";
+              }
+            };
+          drawerOverlay.addEventListener("click", onClick);
+        });
+      }
+    </script>
   </body>
 </html>
