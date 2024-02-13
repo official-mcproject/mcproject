@@ -32,12 +32,12 @@
           id="drawergroupIcon"
         />
       </div>
-      <nav class="navigation2">
-        <div class="guides1">Guides</div>
+      <nav class="navigation4">
+        <div class="guides2">Guides</div>
         <div class="forums" id="drawerforumsText">Forums</div>
-        <div class="guides1">Stats</div>
-        <div class="guides1">Map</div>
-        <div class="guides1">Donate</div>
+        <div class="guides2">Stats</div>
+        <div class="guides2">Map</div>
+        <div class="guides2">Donate</div>
       </nav>
     </div>
 
@@ -61,7 +61,7 @@
           }
         });
       }
-
+      
       var drawerforumsText = document.getElementById("drawerforumsText");
       if (drawerforumsText) {
         drawerforumsText.addEventListener("click", function (e) {
@@ -83,10 +83,10 @@
           threshold: 0.15,
         }
       );
-
+      
       for (let i = 0; i < scrollAnimElements.length; i++) {
         observer.observe(scrollAnimElements[i]);
       }
-    </script>
+      </script>
   </body>
 </html>

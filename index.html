@@ -108,12 +108,12 @@
             id="drawergroupIcon"
           />
         </div>
-        <nav class="navigation2">
-          <div class="guides1">Guides</div>
+        <nav class="navigation4">
+          <div class="guides2">Guides</div>
           <div class="forums" id="drawerforumsText">Forums</div>
-          <div class="guides1">Stats</div>
-          <div class="guides1">Map</div>
-          <div class="guides1">Donate</div>
+          <div class="guides2">Stats</div>
+          <div class="guides2">Map</div>
+          <div class="guides2">Donate</div>
         </nav>
       </div>
     </div>
@@ -138,7 +138,7 @@
           }
         });
       }
-
+      
       var drawerforumsText = document.getElementById("drawerforumsText");
       if (drawerforumsText) {
         drawerforumsText.addEventListener("click", function (e) {
@@ -160,18 +160,18 @@
           threshold: 0.15,
         }
       );
-
+      
       for (let i = 0; i < scrollAnimElements.length; i++) {
         observer.observe(scrollAnimElements[i]);
       }
-
+      
       var maskGroup1 = document.getElementById("maskGroup1");
       if (maskGroup1) {
         maskGroup1.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/";
         });
       }
-
+      
       var hamburgerMenuV5Icon = document.getElementById("hamburgerMenuV5Icon");
       if (hamburgerMenuV5Icon) {
         hamburgerMenuV5Icon.addEventListener("click", function () {
@@ -186,7 +186,7 @@
             drawerOverlayStyle.justifyContent = "";
           }
           drawerOverlay.setAttribute("closable", "");
-
+      
           var onClick =
             drawerOverlay.onClick ||
             function (e) {
@@ -200,13 +200,13 @@
           drawerOverlay.addEventListener("click", onClick);
         });
       }
-
+      
       var forumText = document.getElementById("forumText");
       if (forumText) {
         forumText.addEventListener("click", function (e) {
           window.location.href = "./forum.html";
         });
       }
-    </script>
+      </script>
   </body>
 </html>
