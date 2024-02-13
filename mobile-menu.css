@@ -73,13 +73,13 @@
   gap: 24px;
   text-align: right;
   font-size: var(--font-size-base);
-  color: var(--color-black);
+  color: var(--color-white);
   font-family: var(--font-inter);
 }
 .mobile-menu {
   width: 200px;
   position: relative;
-  background-color: var(--color-white);
+  background-color: rgba(0, 0, 0, 0.85);
   align-items: flex-end;
   padding: var(--padding-base) var(--padding-13xl);
   gap: var(--gap-3xs);

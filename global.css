@@ -24,14 +24,13 @@ body {
   --color-white: #fff;
   --color-gray: #171616;
   --color-lightgray: #cacaca;
-  --color-black: #000;
 
   /* Gaps */
   --gap-13xl: 32px;
-  --gap-11xs: 2px;
-  --gap-3xs: 10px;
+  --gap-7xs: 6px;
   --gap-xl: 20px;
   --gap-base: 16px;
+  --gap-3xs: 10px;
 
   /* Paddings */
   --padding-13xl: 32px;
@@ -40,6 +39,6 @@ body {
 
   /* Border radiuses */
   --br-5xs: 8px;
-  --br-9xs: 4px;
   --br-31xl: 50px;
+  --br-9xs: 4px;
 }
