@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./index.css" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
     />
   </head>
   <body>
@@ -29,13 +29,14 @@
           <div class="playsatoshisquest">play.satoshis.quest</div>
         </div>
         <nav class="navigation">
-          <img
-            class="hamburger-menu-v3-icon"
-            alt=""
-            src="./public/hamburger-menu-v3.svg"
-            id="hamburgerMenuV3Icon"
-          />
-
+          <div class="hamburger-menu-v4" id="hamburgerMenuV4Container">
+            <img
+              class="hamburger-menu-v4-child"
+              alt=""
+              src="./public/group-23.svg"
+              id="groupIcon"
+            />
+          </div>
           <div class="desktop-menu">
             <div class="guides">Guides</div>
             <div class="forums">Forums</div>
@@ -60,31 +61,28 @@
 
     <div id="mobileMenu" class="popup-overlay" style="display: none">
       <div class="mobile-menu" data-animate-on-scroll>
-        <img
-          class="close-icon"
-          alt=""
-          src="./public/close.svg"
-          id="drawercloseIcon"
-        />
-
+        <div class="close-icon">
+          <img
+            class="close-icon-child"
+            alt=""
+            src="./public/group-21.svg"
+            id="drawergroupIcon"
+          />
+        </div>
         <nav class="navigation1">
-          <div class="frame">
-            <div class="guides1">Guides</div>
-            <div class="guides2">Guides</div>
-            <div class="guides3">Guides</div>
-          </div>
-          <div class="forums1">Forums</div>
-          <div class="forums1">Stats</div>
-          <div class="forums1">Map</div>
-          <div class="forums1">Donate</div>
+          <div class="guides1">Guides</div>
+          <div class="guides1">Forums</div>
+          <div class="guides1">Stats</div>
+          <div class="guides1">Map</div>
+          <div class="guides1">Donate</div>
         </nav>
       </div>
     </div>
 
     <script>
-      var drawercloseIcon = document.getElementById("drawercloseIcon");
-      if (drawercloseIcon) {
-        drawercloseIcon.addEventListener("click", function (e) {
+      var drawergroupIcon = document.getElementById("drawergroupIcon");
+      if (drawergroupIcon) {
+        drawergroupIcon.addEventListener("click", function (e) {
           var popup = e.currentTarget.parentNode;
           function isOverlay(node) {
             return !!(
@@ -101,7 +99,7 @@
           }
         });
       }
-
+      
       var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
       var observer = new IntersectionObserver(
         (entries) => {
@@ -117,21 +115,21 @@
           threshold: 0.15,
         }
       );
-
+      
       for (let i = 0; i < scrollAnimElements.length; i++) {
         observer.observe(scrollAnimElements[i]);
       }
-
+      
       var maskGroup1 = document.getElementById("maskGroup1");
       if (maskGroup1) {
         maskGroup1.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/";
         });
       }
-
-      var hamburgerMenuV3Icon = document.getElementById("hamburgerMenuV3Icon");
-      if (hamburgerMenuV3Icon) {
-        hamburgerMenuV3Icon.addEventListener("click", function () {
+      
+      var groupIcon = document.getElementById("groupIcon");
+      if (groupIcon) {
+        groupIcon.addEventListener("click", function () {
           var drawerOverlay = document.getElementById("mobileMenu");
           if (!drawerOverlay) return;
           var drawerOverlayStyle = drawerOverlay.style;
@@ -143,7 +141,7 @@
             drawerOverlayStyle.justifyContent = "";
           }
           drawerOverlay.setAttribute("closable", "");
-
+      
           var onClick =
             drawerOverlay.onClick ||
             function (e) {
@@ -157,6 +155,37 @@
           drawerOverlay.addEventListener("click", onClick);
         });
       }
-    </script>
+      
+      var hamburgerMenuV4Container = document.getElementById(
+        "hamburgerMenuV4Container"
+      );
+      if (hamburgerMenuV4Container) {
+        hamburgerMenuV4Container.addEventListener("click", function () {
+          var drawerOverlay = document.getElementById("mobileMenu");
+          if (!drawerOverlay) return;
+          var drawerOverlayStyle = drawerOverlay.style;
+          if (drawerOverlayStyle) {
+            drawerOverlayStyle.display = "flex";
+            drawerOverlayStyle.zIndex = 99;
+            drawerOverlayStyle.backgroundColor = "rgba(112, 112, 112, 0.5)";
+            drawerOverlayStyle.alignItems = "flex-end";
+            drawerOverlayStyle.justifyContent = "";
+          }
+          drawerOverlay.setAttribute("closable", "");
+      
+          var onClick =
+            drawerOverlay.onClick ||
+            function (e) {
+              if (
+                e.target === drawerOverlay &&
+                drawerOverlay.hasAttribute("closable")
+              ) {
+                drawerOverlayStyle.display = "none";
+              }
+            };
+          drawerOverlay.addEventListener("click", onClick);
+        });
+      }
+      </script>
   </body>
 </html>

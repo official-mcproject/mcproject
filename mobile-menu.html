@@ -11,35 +11,32 @@
     <link rel="stylesheet" href="./mobile-menu.css" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
     />
   </head>
   <body>
     <div class="mobile-menu" data-animate-on-scroll>
-      <img
-        class="close-icon"
-        alt=""
-        src="./public/close.svg"
-        id="drawercloseIcon"
-      />
-
+      <div class="close-icon">
+        <img
+          class="close-icon-child"
+          alt=""
+          src="./public/group-21.svg"
+          id="drawergroupIcon"
+        />
+      </div>
       <nav class="navigation1">
-        <div class="frame">
-          <div class="guides1">Guides</div>
-          <div class="guides2">Guides</div>
-          <div class="guides3">Guides</div>
-        </div>
-        <div class="forums1">Forums</div>
-        <div class="forums1">Stats</div>
-        <div class="forums1">Map</div>
-        <div class="forums1">Donate</div>
+        <div class="guides1">Guides</div>
+        <div class="guides1">Forums</div>
+        <div class="guides1">Stats</div>
+        <div class="guides1">Map</div>
+        <div class="guides1">Donate</div>
       </nav>
     </div>
 
     <script>
-      var drawercloseIcon = document.getElementById("drawercloseIcon");
-      if (drawercloseIcon) {
-        drawercloseIcon.addEventListener("click", function (e) {
+      var drawergroupIcon = document.getElementById("drawergroupIcon");
+      if (drawergroupIcon) {
+        drawergroupIcon.addEventListener("click", function (e) {
           var popup = e.currentTarget.parentNode;
           function isOverlay(node) {
             return !!(

@@ -21,10 +21,6 @@ body {
   --color-white: #fff;
   --color-black: #000;
 
-  /* Gaps */
-  --gap-13xl: 32px;
-  --gap-xl: 20px;
-
   /* Paddings */
   --padding-13xl: 32px;
   --padding-base: 16px;

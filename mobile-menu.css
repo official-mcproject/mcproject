@@ -8,63 +8,49 @@
     opacity: 1;
   }
 }
-.close-icon {
-  width: 20px;
+.close-icon-child {
+  width: 24px;
   position: relative;
-  height: 20px;
+  height: 24px;
   cursor: pointer;
 }
-.guides1,
-.guides2,
-.guides3 {
-  position: relative;
-  line-height: 15px;
-}
-.guides2,
-.guides3 {
-  margin-top: -15px;
-}
-.guides3 {
-  font-weight: 500;
-}
-.frame {
-  width: 53px;
-  height: 15px;
-  overflow: hidden;
-  flex-shrink: 0;
+.close-icon {
+  height: 40px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  align-items: flex-end;
+  justify-content: center;
 }
-.forums1 {
+.guides1 {
   position: relative;
   line-height: 15px;
-  font-weight: 500;
+  font-weight: 600;
 }
 .mobile-menu,
 .navigation1 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  box-sizing: border-box;
 }
 .navigation1 {
   margin: 0;
   width: 144px;
   align-items: flex-start;
-  gap: var(--gap-xl);
+  padding: var(--padding-base) 0 0 8px;
+  gap: 24px;
   text-align: right;
   font-size: var(--font-size-base);
   color: var(--color-black);
   font-family: var(--font-inter);
 }
 .mobile-menu {
+  width: 200px;
   position: relative;
   background-color: var(--color-white);
   align-items: flex-end;
-  padding: var(--padding-base) var(--padding-13xl) var(--padding-13xl);
-  box-sizing: border-box;
-  gap: var(--gap-13xl);
+  padding: var(--padding-base) var(--padding-13xl);
+  gap: 10px;
   opacity: 0;
   height: 100%;
   max-width: 90%;
