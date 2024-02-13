@@ -23,7 +23,7 @@
     />
   </head>
   <body>
-    <div class="forum2">
+    <div class="forum1">
       <nav class="top-menu1">
         <div class="mask-group-1-group">
           <img
@@ -47,13 +47,13 @@
 
           <img class="rectangle-icon" alt="" src="./public/rectangle-17.svg" />
         </div>
-        <nav class="navigation3">
+        <nav class="navigation2">
           <div class="desktop-menu1">
-            <div class="map2">Map</div>
-            <div class="map2">Guides</div>
-            <div class="map2">Forum</div>
-            <div class="map2">Stats</div>
-            <div class="map2">Donate</div>
+            <div class="map1">Map</div>
+            <div class="map1">Guides</div>
+            <div class="forum2" id="forumText">Forum</div>
+            <div class="map1">Stats</div>
+            <div class="map1">Donate</div>
           </div>
         </nav>
       </nav>
@@ -71,7 +71,7 @@
             <div class="playsatoshisquest4">play.satoshis.quest</div>
           </div>
         </div>
-        <nav class="navigation4">
+        <nav class="navigation3">
           <a
             class="icon-discord1"
             href="https://discord.gg/DYvq2wpfyz"
@@ -106,12 +106,12 @@
             id="drawergroupIcon"
           />
         </div>
-        <nav class="navigation2">
-          <div class="guides1">Guides</div>
-          <div class="forum1" id="drawerforumText">Forum</div>
-          <div class="guides1">Stats</div>
-          <div class="guides1">Map</div>
-          <div class="guides1">Donate</div>
+        <nav class="navigation4">
+          <div class="guides2">Guides</div>
+          <div class="forum3" id="drawerforumText">Forum</div>
+          <div class="guides2">Stats</div>
+          <div class="guides2">Map</div>
+          <div class="guides2">Donate</div>
         </nav>
       </div>
     </div>
@@ -186,8 +186,8 @@
       
       var maskGroup1 = document.getElementById("maskGroup1");
       if (maskGroup1) {
-        maskGroup1.addEventListener("click", function (e) {
-          window.location.href = "home.html";
+        maskGroup1.addEventListener("click", function () {
+          window.location.href = "https://satoshis.quest/";
         });
       }
       
@@ -219,6 +219,13 @@
               }
             };
           drawerOverlay.addEventListener("click", onClick);
+        });
+      }
+      
+      var forumText = document.getElementById("forumText");
+      if (forumText) {
+        forumText.addEventListener("click", function () {
+          window.location.href = "https://satoshis.quest/forum.html";
         });
       }
       </script>
