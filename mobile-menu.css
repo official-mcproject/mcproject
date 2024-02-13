@@ -27,13 +27,13 @@
   font-weight: 600;
 }
 .mobile-menu,
-.navigation1 {
+.navigation2 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   box-sizing: border-box;
 }
-.navigation1 {
+.navigation2 {
   margin: 0;
   width: 144px;
   align-items: flex-start;

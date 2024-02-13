@@ -57,6 +57,28 @@
           <img class="picture-icon" alt="" src="./public/picture_1@3x.png" />
         </div>
       </div>
+      <nav class="top-menu1"></nav>
+      <nav class="top-menu">
+        <div class="bottom-menu-inner">
+          <div class="satoshis-quest-parent">
+            <div class="satoshis-quest">Satoshi’s Quest</div>
+            <div class="playsatoshisquest1">play.satoshis.quest</div>
+          </div>
+        </div>
+        <nav class="navigation1">
+          <img
+            class="icon-instagram"
+            alt=""
+            src="./public/-icon-instagram.svg"
+          />
+
+          <img class="icon-facebook" alt="" src="./public/-icon-facebook.svg" />
+
+          <img class="icon-discord" alt="" src="./public/-icon-discord.svg" />
+
+          <img class="icon-twitter" alt="" src="./public/-icon-twitter.svg" />
+        </nav>
+      </nav>
     </div>
 
     <div id="mobileMenu" class="popup-overlay" style="display: none">
@@ -69,7 +91,7 @@
             id="drawergroupIcon"
           />
         </div>
-        <nav class="navigation1">
+        <nav class="navigation2">
           <div class="guides1">Guides</div>
           <div class="guides1">Forums</div>
           <div class="guides1">Stats</div>
@@ -99,7 +121,7 @@
           }
         });
       }
-      
+
       var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
       var observer = new IntersectionObserver(
         (entries) => {
@@ -115,18 +137,18 @@
           threshold: 0.15,
         }
       );
-      
+
       for (let i = 0; i < scrollAnimElements.length; i++) {
         observer.observe(scrollAnimElements[i]);
       }
-      
+
       var maskGroup1 = document.getElementById("maskGroup1");
       if (maskGroup1) {
         maskGroup1.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/";
         });
       }
-      
+
       var groupIcon = document.getElementById("groupIcon");
       if (groupIcon) {
         groupIcon.addEventListener("click", function () {
@@ -141,7 +163,7 @@
             drawerOverlayStyle.justifyContent = "";
           }
           drawerOverlay.setAttribute("closable", "");
-      
+
           var onClick =
             drawerOverlay.onClick ||
             function (e) {
@@ -155,7 +177,7 @@
           drawerOverlay.addEventListener("click", onClick);
         });
       }
-      
+
       var hamburgerMenuV4Container = document.getElementById(
         "hamburgerMenuV4Container"
       );
@@ -172,7 +194,7 @@
             drawerOverlayStyle.justifyContent = "";
           }
           drawerOverlay.setAttribute("closable", "");
-      
+
           var onClick =
             drawerOverlay.onClick ||
             function (e) {
@@ -186,6 +208,6 @@
           drawerOverlay.addEventListener("click", onClick);
         });
       }
-      </script>
+    </script>
   </body>
 </html>

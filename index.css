@@ -91,7 +91,7 @@
 }
 .top-menu {
   align-self: stretch;
-  background-color: #171616;
+  background-color: var(--color-gray);
   justify-content: space-between;
   padding: var(--padding-base) var(--padding-13xl);
 }
@@ -113,31 +113,94 @@
   height: 497px;
   object-fit: cover;
 }
-.body,
-.home,
 .picture-wrapper {
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.picture-wrapper {
-  align-self: stretch;
   justify-content: center;
 }
 .body,
-.home {
-  background-color: var(--color-white);
-  justify-content: flex-start;
+.picture-wrapper,
+.top-menu1 {
+  align-self: stretch;
 }
 .body {
-  align-self: stretch;
+  background-color: var(--color-white);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   padding: var(--padding-13xl) 64px;
-  gap: 32px;
+  gap: var(--gap-13xl);
+}
+.top-menu1 {
+  margin: 0;
+  height: 36px;
+  background-color: var(--color-gray);
+}
+.satoshis-quest {
+  position: relative;
+  line-height: 15px;
+  font-weight: 600;
+}
+.playsatoshisquest1 {
+  position: relative;
+  font-size: 12px;
+  line-height: 15px;
+}
+.satoshis-quest-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.bottom-menu-inner {
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.icon-instagram {
+  width: 24px;
+  position: relative;
+  height: 24px;
+}
+.icon-discord,
+.icon-facebook,
+.icon-twitter {
+  width: 24.1px;
+  position: relative;
+  height: 24px;
+}
+.icon-discord,
+.icon-twitter {
+  width: 21.7px;
+}
+.icon-twitter {
+  width: 29.5px;
+}
+.home,
+.navigation1 {
+  display: flex;
+  align-items: center;
+}
+.navigation1 {
+  margin: 0;
+  height: 40px;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: var(--gap-13xl);
 }
 .home {
   width: 100%;
   position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-start;
   text-align: left;
   font-size: 20px;
   color: #8b8fb1;
@@ -162,13 +225,16 @@
     padding-right: var(--padding-13xl);
     box-sizing: border-box;
   }
+  .playsatoshisquest1,
+  .satoshis-quest {
+    display: flex;
+  }
 }
 @media screen and (max-width: 420px) {
   .desktop-menu,
   .playsatoshisquest {
     display: none;
   }
-  .body,
   .top-menu {
     padding-left: var(--padding-base);
     padding-right: var(--padding-base);
@@ -176,6 +242,16 @@
   }
   .body {
     padding-top: var(--padding-13xl);
+  }
+  .body,
+  .top-menu1 {
+    padding-left: var(--padding-base);
+    padding-right: var(--padding-base);
+    box-sizing: border-box;
+  }
+  .playsatoshisquest1,
+  .satoshis-quest {
+    display: none;
   }
 }
 @media screen and (max-width: 350px) {
@@ -205,13 +281,13 @@
   font-weight: 600;
 }
 .mobile-menu,
-.navigation1 {
+.navigation2 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   box-sizing: border-box;
 }
-.navigation1 {
+.navigation2 {
   margin: 0;
   width: 144px;
   align-items: flex-start;

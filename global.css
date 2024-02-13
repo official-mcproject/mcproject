@@ -19,9 +19,13 @@ body {
 
   /* Colors */
   --color-white: #fff;
+  --color-gray: #171616;
   --color-black: #000;
 
+  /* Gaps */
+  --gap-13xl: 32px;
+
   /* Paddings */
-  --padding-13xl: 32px;
   --padding-base: 16px;
+  --padding-13xl: 32px;
 }
