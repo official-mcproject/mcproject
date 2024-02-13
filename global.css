@@ -12,6 +12,8 @@ body {
 
 :root {
   /* fonts */
+  --font-roboto: Roboto;
+  --font-roboto-slab: "Roboto Slab";
   --font-inter: Inter;
 
   /* font sizes */
@@ -24,9 +26,13 @@ body {
 
   /* Gaps */
   --gap-13xl: 32px;
+  --gap-3xs: 10px;
 
   /* Paddings */
   --padding-13xl: 32px;
   --padding-45xl: 64px;
   --padding-base: 16px;
+
+  /* Border radiuses */
+  --br-5xs: 8px;
 }

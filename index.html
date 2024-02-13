@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
-    <title>Satoshi's Quest - Home</title>
+    <title>Satoshi's Quest</title>
 
     <meta property="og:image" content="public/thumbnail.png" />
 
@@ -12,7 +12,15 @@
     <link rel="stylesheet" href="./index.css" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto Slab:wght@400;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap"
     />
   </head>
   <body>
@@ -47,21 +55,31 @@
         </nav>
       </nav>
       <div class="body">
+        <div class="connect-play-parent">
+          <div class="connect-play">Connect & Play</div>
+          <div class="open-your-minecraft-container">
+            <span>
+              <span class="open-your-minecraft"
+                >Open your minecraft launcher, click "Multiplayer" and "Add
+                Server", them enter our server IP address:</span
+              >
+              <span class="span"> </span>
+            </span>
+            <span class="playsatoshisquest1">play.satoshis.quest</span>
+          </div>
+        </div>
+        <div class="picture-wrapper">
+          <img class="picture-icon" alt="" src="./public/picture_1@3x.png" />
+        </div>
         <div class="wimmer-loves-alex-ramey-gaming-wrapper">
           <div class="wimmer-loves-alex">Wimmer loves Alex Ramey Gaming 🥰</div>
-        </div>
-        <div class="picture-wrapper">
-          <img class="picture-icon" alt="" src="./public/picture_1@3x.png" />
-        </div>
-        <div class="picture-wrapper">
-          <img class="picture-icon" alt="" src="./public/picture_1@3x.png" />
         </div>
       </div>
       <nav class="bottom-menu">
         <div class="bottom-menu-inner">
           <div class="satoshis-quest-parent">
             <div class="satoshis-quest">Satoshi’s Quest</div>
-            <div class="playsatoshisquest1">play.satoshis.quest</div>
+            <div class="playsatoshisquest2">play.satoshis.quest</div>
           </div>
         </div>
         <nav class="navigation1">
@@ -120,7 +138,7 @@
           }
         });
       }
-      
+
       var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
       var observer = new IntersectionObserver(
         (entries) => {
@@ -136,18 +154,18 @@
           threshold: 0.15,
         }
       );
-      
+
       for (let i = 0; i < scrollAnimElements.length; i++) {
         observer.observe(scrollAnimElements[i]);
       }
-      
+
       var maskGroup1 = document.getElementById("maskGroup1");
       if (maskGroup1) {
         maskGroup1.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/";
         });
       }
-      
+
       var hamburgerMenuV5Icon = document.getElementById("hamburgerMenuV5Icon");
       if (hamburgerMenuV5Icon) {
         hamburgerMenuV5Icon.addEventListener("click", function () {
@@ -162,7 +180,7 @@
             drawerOverlayStyle.justifyContent = "";
           }
           drawerOverlay.setAttribute("closable", "");
-      
+
           var onClick =
             drawerOverlay.onClick ||
             function (e) {
@@ -176,6 +194,6 @@
           drawerOverlay.addEventListener("click", onClick);
         });
       }
-      </script>
+    </script>
   </body>
 </html>

@@ -78,7 +78,7 @@
   background-color: var(--color-white);
   align-items: flex-end;
   padding: var(--padding-base) var(--padding-13xl);
-  gap: 10px;
+  gap: var(--gap-3xs);
   opacity: 0;
   height: 100%;
   max-width: 90%;
