@@ -23,6 +23,7 @@
             loading="eager"
             alt=""
             src="./public/icon@2x.png"
+            id="maskGroup1"
           />
 
           <div class="playsatoshisquest">play.satoshis.quest</div>
@@ -100,7 +101,7 @@
           }
         });
       }
-      
+
       var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
       var observer = new IntersectionObserver(
         (entries) => {
@@ -116,11 +117,18 @@
           threshold: 0.15,
         }
       );
-      
+
       for (let i = 0; i < scrollAnimElements.length; i++) {
         observer.observe(scrollAnimElements[i]);
       }
-      
+
+      var maskGroup1 = document.getElementById("maskGroup1");
+      if (maskGroup1) {
+        maskGroup1.addEventListener("click", function () {
+          window.location.href = "https://satoshis.quest/";
+        });
+      }
+
       var hamburgerMenuV3Icon = document.getElementById("hamburgerMenuV3Icon");
       if (hamburgerMenuV3Icon) {
         hamburgerMenuV3Icon.addEventListener("click", function () {
@@ -135,7 +143,7 @@
             drawerOverlayStyle.justifyContent = "";
           }
           drawerOverlay.setAttribute("closable", "");
-      
+
           var onClick =
             drawerOverlay.onClick ||
             function (e) {
@@ -149,6 +157,6 @@
           drawerOverlay.addEventListener("click", onClick);
         });
       }
-      </script>
+    </script>
   </body>
 </html>

@@ -13,6 +13,7 @@
   position: relative;
   height: 20px;
   object-fit: cover;
+  cursor: pointer;
 }
 .playsatoshisquest {
   position: relative;
@@ -163,6 +164,14 @@
   }
   .body {
     padding-top: var(--padding-13xl);
+  }
+}
+@media screen and (max-width: 350px) {
+  .body {
+    padding-left: var(--padding-base);
+    padding-top: var(--padding-13xl);
+    padding-right: var(--padding-base);
+    box-sizing: border-box;
   }
 }
 .close-icon {
