@@ -406,19 +406,19 @@
   align-items: center;
   justify-content: center;
 }
-.map6 {
+.map1 {
   position: relative;
   line-height: 15px;
   cursor: pointer;
 }
 .mobile-menu,
-.navigation12 {
+.navigation2 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   box-sizing: border-box;
 }
-.navigation12 {
+.navigation2 {
   margin: 0;
   width: 144px;
   align-items: flex-start;
