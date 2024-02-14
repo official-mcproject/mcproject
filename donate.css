@@ -346,10 +346,9 @@
   align-items: center;
   justify-content: center;
 }
-.guides7 {
+.map6 {
   position: relative;
   line-height: 15px;
-  font-weight: 600;
   cursor: pointer;
 }
 .mobile-menu,
@@ -366,7 +365,7 @@
   padding: var(--padding-base) 0 0;
   gap: 24px;
   text-align: right;
-  font-size: var(--text-lg-regular-size);
+  font-size: var(--font-size-xl);
   color: var(--color-white);
   font-family: var(--font-open-sans);
 }
