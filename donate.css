@@ -31,7 +31,7 @@
     opacity: 1;
   }
 }
-.mask-group-15 {
+.mask-group-14 {
   width: 24px;
   position: relative;
   border-radius: var(--br-9xs);
@@ -39,11 +39,11 @@
   object-fit: cover;
   cursor: pointer;
 }
-.playsatoshisquest10 {
+.playsatoshisquest8 {
   position: relative;
   line-height: 15px;
 }
-.mask-group-1-parent3 {
+.mask-group-1-parent2 {
   height: 40px;
   display: flex;
   flex-direction: row;
@@ -51,58 +51,58 @@
   justify-content: flex-start;
   gap: var(--gap-base);
 }
-.hamburger-menu-v5-child12,
-.hamburger-menu-v5-child13 {
+.hamburger-menu-v5-child10,
+.hamburger-menu-v5-child9 {
   width: 31.8px;
   position: relative;
   border-radius: var(--br-31xl);
   height: 4.2px;
 }
-.hamburger-menu-v5-child13 {
+.hamburger-menu-v5-child10 {
   height: 3.6px;
 }
-.hamburger-menu-v55 {
+.hamburger-menu-v54 {
   height: 24px;
   display: none;
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-between;
 }
-.hamburger-menu-v55:active {
+.hamburger-menu-v54:active {
   cursor: auto;
   animation: 1s ease-out 0s 1 normal none pulsate;
   opacity: 1;
 }
-.map5 {
+.map4 {
   position: relative;
   line-height: 15px;
   cursor: pointer;
 }
-.desktop-menu5,
-.navigation10,
-.top-menu5 {
+.desktop-menu4,
+.navigation8,
+.top-menu4 {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.desktop-menu5 {
+.desktop-menu4 {
   justify-content: flex-end;
   gap: var(--gap-xl);
 }
-.navigation10,
-.top-menu5 {
+.navigation8,
+.top-menu4 {
   margin: 0;
   text-align: right;
   color: var(--color-white);
 }
-.navigation10 {
+.navigation8 {
   height: 40px;
   width: 317px;
   justify-content: flex-end;
   font-size: var(--font-size-xl);
   font-family: var(--font-open-sans);
 }
-.top-menu5 {
+.top-menu4 {
   align-self: stretch;
   background-color: var(--color-gray);
   justify-content: space-between;
@@ -117,7 +117,7 @@
   background-color: var(--color-whitesmoke-100);
   height: 305px;
 }
-.body5 {
+.body4 {
   align-self: stretch;
   background-color: var(--color-white);
   overflow: hidden;
@@ -127,12 +127,12 @@
   justify-content: flex-start;
   padding: var(--padding-13xl) var(--padding-45xl);
 }
-.satoshis-quest5 {
+.satoshis-quest4 {
   position: relative;
   line-height: 15px;
   font-weight: 600;
 }
-.playsatoshisquest11 {
+.playsatoshisquest9 {
   height: 15px;
   position: relative;
   font-size: var(--font-size-base);
@@ -141,21 +141,21 @@
   color: var(--color-lightgray);
   display: inline-block;
 }
-.satoshis-quest-parent3 {
+.satoshis-quest-parent2 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   gap: var(--gap-7xs);
 }
-.bottom-menu-inner3 {
+.bottom-menu-inner2 {
   height: 40px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
 }
-.vector-icon5 {
+.vector-icon4 {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -167,40 +167,40 @@
   overflow: hidden;
   max-height: 100%;
 }
-.icon-discord5 {
+.icon-discord4 {
   text-decoration: none;
   width: 21.7px;
   position: relative;
   height: 24px;
 }
-.icon-instagram5 {
+.icon-instagram4 {
   width: 24px;
   position: relative;
   height: 24px;
 }
-.icon-facebook5,
-.icon-twitter5 {
+.icon-facebook4,
+.icon-twitter4 {
   width: 24.1px;
   position: relative;
   height: 24px;
 }
-.icon-twitter5 {
+.icon-twitter4 {
   width: 29.5px;
 }
-.navigation11 {
+.navigation9 {
   margin: 0;
   height: 40px;
   flex-direction: row;
   justify-content: flex-end;
   gap: var(--gap-13xl);
 }
-.bottom-menu5,
-.donate5,
-.navigation11 {
+.bottom-menu4,
+.donate4,
+.navigation9 {
   display: flex;
   align-items: center;
 }
-.bottom-menu5 {
+.bottom-menu4 {
   margin: 0;
   align-self: stretch;
   background-color: var(--color-gray);
@@ -212,7 +212,7 @@
   color: var(--color-white);
   font-family: var(--font-roboto-slab);
 }
-.donate5 {
+.donate4 {
   width: 100%;
   position: relative;
   background-color: var(--color-white);
@@ -221,50 +221,50 @@
   justify-content: flex-start;
 }
 @media screen and (max-width: 1200px) {
-  .navigation10 {
+  .navigation8 {
     display: flex;
   }
-  .bottom-menu5,
-  .top-menu5 {
+  .bottom-menu4,
+  .top-menu4 {
     padding-left: var(--padding-45xl);
     padding-right: var(--padding-45xl);
     box-sizing: border-box;
   }
 }
 @media screen and (max-width: 960px) {
-  .hamburger-menu-v55,
-  .playsatoshisquest10 {
+  .hamburger-menu-v54,
+  .playsatoshisquest8 {
     display: flex;
   }
-  .desktop-menu5,
-  .navigation10 {
+  .desktop-menu4,
+  .navigation8 {
     display: none;
   }
-  .body5,
-  .top-menu5 {
+  .body4,
+  .top-menu4 {
     padding-left: var(--padding-13xl);
     padding-right: var(--padding-13xl);
     box-sizing: border-box;
   }
-  .body5 {
+  .body4 {
     padding-top: var(--padding-13xl);
   }
-  .playsatoshisquest11,
-  .satoshis-quest5 {
+  .playsatoshisquest9,
+  .satoshis-quest4 {
     display: flex;
   }
-  .bottom-menu5 {
+  .bottom-menu4 {
     padding-left: var(--padding-13xl);
     padding-right: var(--padding-13xl);
     box-sizing: border-box;
   }
 }
 @media screen and (max-width: 420px) {
-  .desktop-menu5,
-  .playsatoshisquest10 {
+  .desktop-menu4,
+  .playsatoshisquest8 {
     display: none;
   }
-  .hamburger-menu-v55:active {
+  .hamburger-menu-v54:active {
     animation: 1s ease-in 0s 1 normal none pulsate;
     opacity: 1;
   }
@@ -291,26 +291,26 @@
       animation-timing-function: ease-out;
     }
   }
-  .body5,
-  .top-menu5 {
+  .body4,
+  .top-menu4 {
     padding-left: var(--padding-base);
     padding-right: var(--padding-base);
     box-sizing: border-box;
   }
-  .body5 {
+  .body4 {
     padding-top: var(--padding-13xl);
   }
-  .playsatoshisquest11,
-  .satoshis-quest5 {
+  .playsatoshisquest9,
+  .satoshis-quest4 {
     display: flex;
   }
-  .bottom-menu-inner3 {
+  .bottom-menu-inner2 {
     display: none;
   }
-  .navigation11 {
+  .navigation9 {
     display: flex;
   }
-  .bottom-menu5 {
+  .bottom-menu4 {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
@@ -321,7 +321,7 @@
   }
 }
 @media screen and (max-width: 350px) {
-  .body5 {
+  .body4 {
     padding-left: var(--padding-base);
     padding-top: var(--padding-13xl);
     padding-right: var(--padding-base);
