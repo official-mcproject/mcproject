@@ -31,7 +31,7 @@
     opacity: 1;
   }
 }
-.mask-group-14 {
+.mask-group-11 {
   width: 24px;
   position: relative;
   border-radius: var(--br-9xs);
@@ -39,11 +39,11 @@
   object-fit: cover;
   cursor: pointer;
 }
-.playsatoshisquest9 {
+.playsatoshisquest3 {
   position: relative;
   line-height: 15px;
 }
-.mask-group-1-parent2 {
+.mask-group-1-group {
   height: 40px;
   display: flex;
   flex-direction: row;
@@ -51,58 +51,58 @@
   justify-content: flex-start;
   gap: var(--gap-base);
 }
-.hamburger-menu-v5-child10,
-.hamburger-menu-v5-child9 {
+.hamburger-menu-v5-child1,
+.rectangle-icon {
   width: 31.8px;
   position: relative;
   border-radius: var(--br-31xl);
   height: 4.2px;
 }
-.hamburger-menu-v5-child10 {
+.hamburger-menu-v5-child1 {
   height: 3.6px;
 }
-.hamburger-menu-v54 {
+.hamburger-menu-v51 {
   height: 24px;
   display: none;
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-between;
 }
-.hamburger-menu-v54:active {
+.hamburger-menu-v51:active {
   cursor: auto;
   animation: 1s ease-out 0s 1 normal none pulsate;
   opacity: 1;
 }
-.map4 {
+.map1 {
   position: relative;
   line-height: 15px;
   cursor: pointer;
 }
-.desktop-menu4,
-.navigation8,
-.top-menu4 {
+.desktop-menu1,
+.navigation2,
+.top-menu1 {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.desktop-menu4 {
+.desktop-menu1 {
   justify-content: flex-end;
   gap: var(--gap-xl);
 }
-.navigation8,
-.top-menu4 {
+.navigation2,
+.top-menu1 {
   margin: 0;
   text-align: right;
   color: var(--color-white);
 }
-.navigation8 {
+.navigation2 {
   height: 40px;
   width: 317px;
   justify-content: flex-end;
   font-size: var(--font-size-xl);
   font-family: var(--font-roboto);
 }
-.top-menu4 {
+.top-menu1 {
   align-self: stretch;
   background-color: var(--color-gray);
   justify-content: space-between;
@@ -110,14 +110,14 @@
   font-size: var(--font-size-base);
   font-family: var(--font-roboto-slab);
 }
-.frame-iframe {
+.body-child {
   border: 0;
   align-self: stretch;
   border-radius: var(--br-5xs);
   background-color: var(--color-whitesmoke-100);
   height: 305px;
 }
-.body4 {
+.body1 {
   align-self: stretch;
   background-color: var(--color-white);
   overflow: hidden;
@@ -127,12 +127,12 @@
   justify-content: flex-start;
   padding: var(--padding-13xl) var(--padding-45xl);
 }
-.satoshis-quest4 {
+.satoshis-quest1 {
   position: relative;
   line-height: 15px;
   font-weight: 600;
 }
-.playsatoshisquest10 {
+.playsatoshisquest4 {
   height: 15px;
   position: relative;
   font-size: var(--font-size-base);
@@ -141,21 +141,21 @@
   color: var(--color-lightgray);
   display: inline-block;
 }
-.satoshis-quest-parent2 {
+.satoshis-quest-group {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   gap: var(--gap-7xs);
 }
-.bottom-menu-inner2 {
+.bottom-menu-child {
   height: 40px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
 }
-.vector-icon4 {
+.vector-icon1 {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -167,40 +167,40 @@
   overflow: hidden;
   max-height: 100%;
 }
-.icon-discord4 {
+.icon-discord1 {
   text-decoration: none;
   width: 21.7px;
   position: relative;
   height: 24px;
 }
-.icon-instagram4 {
+.icon-instagram1 {
   width: 24px;
   position: relative;
   height: 24px;
 }
-.icon-facebook4,
-.icon-twitter4 {
+.icon-facebook1,
+.icon-twitter1 {
   width: 24.1px;
   position: relative;
   height: 24px;
 }
-.icon-twitter4 {
+.icon-twitter1 {
   width: 29.5px;
 }
-.navigation9 {
+.navigation3 {
   margin: 0;
   height: 40px;
   flex-direction: row;
   justify-content: flex-end;
   gap: var(--gap-13xl);
 }
-.bottom-menu4,
+.bottom-menu1,
 .maps,
-.navigation9 {
+.navigation3 {
   display: flex;
   align-items: center;
 }
-.bottom-menu4 {
+.bottom-menu1 {
   margin: 0;
   align-self: stretch;
   background-color: var(--color-gray);
@@ -221,50 +221,50 @@
   justify-content: flex-start;
 }
 @media screen and (max-width: 1200px) {
-  .navigation8 {
+  .navigation2 {
     display: flex;
   }
-  .bottom-menu4,
-  .top-menu4 {
+  .bottom-menu1,
+  .top-menu1 {
     padding-left: var(--padding-45xl);
     padding-right: var(--padding-45xl);
     box-sizing: border-box;
   }
 }
 @media screen and (max-width: 960px) {
-  .hamburger-menu-v54,
-  .playsatoshisquest9 {
+  .hamburger-menu-v51,
+  .playsatoshisquest3 {
     display: flex;
   }
-  .desktop-menu4,
-  .navigation8 {
+  .desktop-menu1,
+  .navigation2 {
     display: none;
   }
-  .body4,
-  .top-menu4 {
+  .body1,
+  .top-menu1 {
     padding-left: var(--padding-13xl);
     padding-right: var(--padding-13xl);
     box-sizing: border-box;
   }
-  .body4 {
+  .body1 {
     padding-top: var(--padding-13xl);
   }
-  .playsatoshisquest10,
-  .satoshis-quest4 {
+  .playsatoshisquest4,
+  .satoshis-quest1 {
     display: flex;
   }
-  .bottom-menu4 {
+  .bottom-menu1 {
     padding-left: var(--padding-13xl);
     padding-right: var(--padding-13xl);
     box-sizing: border-box;
   }
 }
 @media screen and (max-width: 420px) {
-  .desktop-menu4,
-  .playsatoshisquest9 {
+  .desktop-menu1,
+  .playsatoshisquest3 {
     display: none;
   }
-  .hamburger-menu-v54:active {
+  .hamburger-menu-v51:active {
     animation: 1s ease-in 0s 1 normal none pulsate;
     opacity: 1;
   }
@@ -291,26 +291,26 @@
       animation-timing-function: ease-out;
     }
   }
-  .body4,
-  .top-menu4 {
+  .body1,
+  .top-menu1 {
     padding-left: var(--padding-base);
     padding-right: var(--padding-base);
     box-sizing: border-box;
   }
-  .body4 {
+  .body1 {
     padding-top: var(--padding-13xl);
   }
-  .playsatoshisquest10,
-  .satoshis-quest4 {
+  .playsatoshisquest4,
+  .satoshis-quest1 {
     display: flex;
   }
-  .bottom-menu-inner2 {
+  .bottom-menu-child {
     display: none;
   }
-  .navigation9 {
+  .navigation3 {
     display: flex;
   }
-  .bottom-menu4 {
+  .bottom-menu1 {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
@@ -321,7 +321,7 @@
   }
 }
 @media screen and (max-width: 350px) {
-  .body4 {
+  .body1 {
     padding-left: var(--padding-base);
     padding-top: var(--padding-13xl);
     padding-right: var(--padding-base);
@@ -346,20 +346,20 @@
   align-items: center;
   justify-content: center;
 }
-.guides7 {
+.guides2 {
   position: relative;
   line-height: 15px;
   font-weight: 600;
   cursor: pointer;
 }
 .mobile-menu,
-.navigation12 {
+.navigation4 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   box-sizing: border-box;
 }
-.navigation12 {
+.navigation4 {
   margin: 0;
   width: 144px;
   align-items: flex-start;
