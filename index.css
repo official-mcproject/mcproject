@@ -93,13 +93,13 @@
 .top-menu {
   margin: 0;
   text-align: right;
-  font-size: var(--text-lg-regular-size);
   color: var(--color-white);
 }
 .navigation {
   height: 40px;
   width: 317px;
   justify-content: flex-end;
+  font-size: var(--font-size-xl);
   font-family: var(--font-open-sans);
 }
 .top-menu {
@@ -107,32 +107,21 @@
   background-color: var(--color-gray);
   justify-content: space-between;
   padding: var(--padding-base) var(--padding-13xl);
+  font-size: var(--text-lg-regular-size);
   font-family: var(--font-roboto-slab);
 }
-.c {
-  text-transform: uppercase;
-}
-.onnect-play {
-  text-transform: capitalize;
-}
-.connect-play-container {
+.connect-play,
+.open-your-minecraft {
   align-self: stretch;
   position: relative;
-  line-height: 43.2px;
+}
+.connect-play {
+  line-height: 44px;
   font-weight: 500;
 }
 .open-your-minecraft {
-  font-weight: 300;
-}
-.span {
-  color: var(--color-white);
-}
-.open-your-minecraft-container {
-  align-self: stretch;
-  position: relative;
   font-size: var(--text-lg-regular-size);
   line-height: 24px;
-  color: #f2f2f2;
   font-family: var(--font-open-sans);
 }
 .connect-play-parent {
@@ -199,7 +188,7 @@
   line-height: 15px;
   font-weight: 600;
 }
-.playsatoshisquest2 {
+.playsatoshisquest1 {
   height: 15px;
   position: relative;
   font-size: var(--font-size-base);
@@ -267,7 +256,6 @@
 .home {
   display: flex;
   align-items: center;
-  color: var(--color-white);
   font-family: var(--font-roboto-slab);
 }
 .bottom-menu {
@@ -279,6 +267,7 @@
   padding: var(--padding-13xl);
   text-align: right;
   font-size: var(--font-size-xl);
+  color: var(--color-white);
 }
 .home {
   width: 100%;
@@ -289,6 +278,7 @@
   justify-content: flex-start;
   text-align: center;
   font-size: 36px;
+  color: var(--color-whitesmoke-200);
 }
 @media screen and (max-width: 1200px) {
   .navigation {
@@ -319,7 +309,7 @@
   .body {
     padding-top: var(--padding-13xl);
   }
-  .playsatoshisquest2,
+  .playsatoshisquest1,
   .satoshis-quest {
     display: flex;
   }
@@ -370,7 +360,7 @@
   .body {
     padding-top: var(--padding-13xl);
   }
-  .playsatoshisquest2,
+  .playsatoshisquest1,
   .satoshis-quest {
     display: flex;
   }

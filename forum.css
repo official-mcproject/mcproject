@@ -39,7 +39,7 @@
   object-fit: cover;
   cursor: pointer;
 }
-.playsatoshisquest3 {
+.playsatoshisquest2 {
   position: relative;
   line-height: 15px;
 }
@@ -93,13 +93,13 @@
 .top-menu1 {
   margin: 0;
   text-align: right;
-  font-size: var(--text-lg-regular-size);
   color: var(--color-white);
 }
 .navigation3 {
   height: 40px;
   width: 317px;
   justify-content: flex-end;
+  font-size: var(--font-size-xl);
   font-family: var(--font-open-sans);
 }
 .top-menu1 {
@@ -107,6 +107,7 @@
   background-color: var(--color-gray);
   justify-content: space-between;
   padding: var(--padding-base) var(--padding-13xl);
+  font-size: var(--text-lg-regular-size);
   font-family: var(--font-roboto-slab);
 }
 .body-child {
@@ -131,7 +132,7 @@
   line-height: 15px;
   font-weight: 600;
 }
-.playsatoshisquest4 {
+.playsatoshisquest3 {
   height: 15px;
   position: relative;
   font-size: var(--font-size-base);
@@ -201,12 +202,11 @@
 }
 .bottom-menu1 {
   margin: 0;
-  width: 785px;
+  align-self: stretch;
   background-color: var(--color-gray);
   flex-direction: row;
   justify-content: space-between;
   padding: var(--padding-13xl);
-  box-sizing: border-box;
   text-align: right;
   font-size: var(--font-size-xl);
   color: var(--color-white);
@@ -233,7 +233,7 @@
 }
 @media screen and (max-width: 960px) {
   .hamburger-menu-v51,
-  .playsatoshisquest3 {
+  .playsatoshisquest2 {
     display: flex;
   }
   .desktop-menu1,
@@ -249,7 +249,7 @@
   .body1 {
     padding-top: var(--padding-13xl);
   }
-  .playsatoshisquest4,
+  .playsatoshisquest3,
   .satoshis-quest1 {
     display: flex;
   }
@@ -261,7 +261,7 @@
 }
 @media screen and (max-width: 420px) {
   .desktop-menu1,
-  .playsatoshisquest3 {
+  .playsatoshisquest2 {
     display: none;
   }
   .hamburger-menu-v51:active {
@@ -300,7 +300,7 @@
   .body1 {
     padding-top: var(--padding-13xl);
   }
-  .playsatoshisquest4,
+  .playsatoshisquest3,
   .satoshis-quest1 {
     display: flex;
   }

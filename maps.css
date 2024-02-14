@@ -39,7 +39,7 @@
   object-fit: cover;
   cursor: pointer;
 }
-.playsatoshisquest9 {
+.playsatoshisquest8 {
   position: relative;
   line-height: 15px;
 }
@@ -93,13 +93,13 @@
 .top-menu4 {
   margin: 0;
   text-align: right;
-  font-size: var(--text-lg-regular-size);
   color: var(--color-white);
 }
 .navigation9 {
   height: 40px;
   width: 317px;
   justify-content: flex-end;
+  font-size: var(--font-size-xl);
   font-family: var(--font-open-sans);
 }
 .top-menu4 {
@@ -107,6 +107,7 @@
   background-color: var(--color-gray);
   justify-content: space-between;
   padding: var(--padding-base) var(--padding-13xl);
+  font-size: var(--text-lg-regular-size);
   font-family: var(--font-roboto-slab);
 }
 .body-inner {
@@ -130,7 +131,7 @@
   line-height: 15px;
   font-weight: 600;
 }
-.playsatoshisquest10 {
+.playsatoshisquest9 {
   height: 15px;
   position: relative;
   font-size: var(--font-size-base);
@@ -200,12 +201,11 @@
 }
 .bottom-menu4 {
   margin: 0;
-  width: 785px;
+  align-self: stretch;
   background-color: var(--color-gray);
   flex-direction: row;
   justify-content: space-between;
   padding: var(--padding-13xl);
-  box-sizing: border-box;
   text-align: right;
   font-size: var(--font-size-xl);
   color: var(--color-white);
@@ -232,7 +232,7 @@
 }
 @media screen and (max-width: 960px) {
   .hamburger-menu-v54,
-  .playsatoshisquest9 {
+  .playsatoshisquest8 {
     display: flex;
   }
   .desktop-menu4,
@@ -248,7 +248,7 @@
   .body4 {
     padding-top: var(--padding-13xl);
   }
-  .playsatoshisquest10,
+  .playsatoshisquest9,
   .satoshis-quest4 {
     display: flex;
   }
@@ -260,7 +260,7 @@
 }
 @media screen and (max-width: 420px) {
   .desktop-menu4,
-  .playsatoshisquest9 {
+  .playsatoshisquest8 {
     display: none;
   }
   .hamburger-menu-v54:active {
@@ -299,7 +299,7 @@
   .body4 {
     padding-top: var(--padding-13xl);
   }
-  .playsatoshisquest10,
+  .playsatoshisquest9,
   .satoshis-quest4 {
     display: flex;
   }

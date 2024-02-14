@@ -16,7 +16,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Open Sans:wght@300;400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open Sans:wght@400;600&display=swap"
     />
     <link
       rel="stylesheet"
@@ -72,21 +72,10 @@
       </nav>
       <div class="body">
         <div class="connect-play-parent">
-          <div class="connect-play-container">
-            <span class="c">C</span>
-            <span class="onnect-play">onnect & Play</span>
-          </div>
-          <div class="open-your-minecraft-container">
-            <span>
-              <span class="open-your-minecraft"
-                >Open your minecraft launcher, click "Multiplayer" and "Add
-                Server", then enter our server IP address:</span
-              >
-              <span class="span"> </span>
-            </span>
-            <span class="span">
-              <span>play.satoshis.quest</span>
-            </span>
+          <div class="connect-play">Connect & Play</div>
+          <div class="open-your-minecraft">
+            Open your minecraft launcher, click "Multiplayer" and "Add Server",
+            then enter our server IP address: play.satoshis.quest
           </div>
         </div>
         <div class="picture-wrapper">
@@ -100,7 +89,7 @@
         <div class="bottom-menu-inner">
           <div class="satoshis-quest-parent">
             <div class="satoshis-quest">Satoshi’s Quest</div>
-            <div class="playsatoshisquest2">play.satoshis.quest</div>
+            <div class="playsatoshisquest1">play.satoshis.quest</div>
           </div>
         </div>
         <nav class="navigation1">
@@ -164,14 +153,14 @@
           }
         });
       }
-      
+
       var drawerguidesText = document.getElementById("drawerguidesText");
       if (drawerguidesText) {
         drawerguidesText.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/guides.html";
         });
       }
-      
+
       var drawerguidesText = document.getElementById("drawerguidesText");
       if (drawerguidesText) {
         drawerguidesText.addEventListener("click", function (e) {
@@ -191,14 +180,14 @@
           }
         });
       }
-      
+
       var drawerforumText = document.getElementById("drawerforumText");
       if (drawerforumText) {
         drawerforumText.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/forum.html";
         });
       }
-      
+
       var drawerforumText = document.getElementById("drawerforumText");
       if (drawerforumText) {
         drawerforumText.addEventListener("click", function (e) {
@@ -218,14 +207,14 @@
           }
         });
       }
-      
+
       var drawerstatsText = document.getElementById("drawerstatsText");
       if (drawerstatsText) {
         drawerstatsText.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/stats.html";
         });
       }
-      
+
       var drawerstatsText = document.getElementById("drawerstatsText");
       if (drawerstatsText) {
         drawerstatsText.addEventListener("click", function (e) {
@@ -245,14 +234,14 @@
           }
         });
       }
-      
+
       var drawermapText = document.getElementById("drawermapText");
       if (drawermapText) {
         drawermapText.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/maps.html";
         });
       }
-      
+
       var drawermapText = document.getElementById("drawermapText");
       if (drawermapText) {
         drawermapText.addEventListener("click", function (e) {
@@ -272,14 +261,14 @@
           }
         });
       }
-      
+
       var drawerdonateText = document.getElementById("drawerdonateText");
       if (drawerdonateText) {
         drawerdonateText.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/donate.html";
         });
       }
-      
+
       var drawerdonateText = document.getElementById("drawerdonateText");
       if (drawerdonateText) {
         drawerdonateText.addEventListener("click", function (e) {
@@ -299,7 +288,7 @@
           }
         });
       }
-      
+
       var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
       var observer = new IntersectionObserver(
         (entries) => {
@@ -315,18 +304,18 @@
           threshold: 0.15,
         }
       );
-      
+
       for (let i = 0; i < scrollAnimElements.length; i++) {
         observer.observe(scrollAnimElements[i]);
       }
-      
+
       var maskGroup1 = document.getElementById("maskGroup1");
       if (maskGroup1) {
         maskGroup1.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/";
         });
       }
-      
+
       var hamburgerMenuV5Container = document.getElementById(
         "hamburgerMenuV5Container"
       );
@@ -343,7 +332,7 @@
             drawerOverlayStyle.justifyContent = "";
           }
           drawerOverlay.setAttribute("closable", "");
-      
+
           var onClick =
             drawerOverlay.onClick ||
             function (e) {
@@ -357,41 +346,41 @@
           drawerOverlay.addEventListener("click", onClick);
         });
       }
-      
+
       var mapText = document.getElementById("mapText");
       if (mapText) {
         mapText.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/maps.html";
         });
       }
-      
+
       var guidesText = document.getElementById("guidesText");
       if (guidesText) {
         guidesText.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/guides.html";
         });
       }
-      
+
       var forumText = document.getElementById("forumText");
       if (forumText) {
         forumText.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/forum.html";
         });
       }
-      
+
       var statsText = document.getElementById("statsText");
       if (statsText) {
         statsText.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/stats.html";
         });
       }
-      
+
       var donateText = document.getElementById("donateText");
       if (donateText) {
         donateText.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/donate.html";
         });
       }
-      </script>
+    </script>
   </body>
 </html>

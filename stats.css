@@ -39,7 +39,7 @@
   object-fit: cover;
   cursor: pointer;
 }
-.playsatoshisquest5 {
+.playsatoshisquest4 {
   position: relative;
   line-height: 15px;
 }
@@ -93,13 +93,13 @@
 .top-menu2 {
   margin: 0;
   text-align: right;
-  font-size: var(--text-lg-regular-size);
   color: var(--color-white);
 }
 .navigation5 {
   height: 40px;
   width: 317px;
   justify-content: flex-end;
+  font-size: var(--font-size-xl);
   font-family: var(--font-open-sans);
 }
 .top-menu2 {
@@ -107,6 +107,7 @@
   background-color: var(--color-gray);
   justify-content: space-between;
   padding: var(--padding-base) var(--padding-13xl);
+  font-size: var(--text-lg-regular-size);
   font-family: var(--font-roboto-slab);
 }
 .body-item {
@@ -130,7 +131,7 @@
   line-height: 15px;
   font-weight: 600;
 }
-.playsatoshisquest6 {
+.playsatoshisquest5 {
   height: 15px;
   position: relative;
   font-size: var(--font-size-base);
@@ -231,7 +232,7 @@
 }
 @media screen and (max-width: 960px) {
   .hamburger-menu-v52,
-  .playsatoshisquest5 {
+  .playsatoshisquest4 {
     display: flex;
   }
   .desktop-menu2,
@@ -247,7 +248,7 @@
   .body2 {
     padding-top: var(--padding-13xl);
   }
-  .playsatoshisquest6,
+  .playsatoshisquest5,
   .satoshis-quest2 {
     display: flex;
   }
@@ -259,7 +260,7 @@
 }
 @media screen and (max-width: 420px) {
   .desktop-menu2,
-  .playsatoshisquest5 {
+  .playsatoshisquest4 {
     display: none;
   }
   .hamburger-menu-v52:active {
@@ -298,7 +299,7 @@
   .body2 {
     padding-top: var(--padding-13xl);
   }
-  .playsatoshisquest6,
+  .playsatoshisquest5,
   .satoshis-quest2 {
     display: flex;
   }
