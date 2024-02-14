@@ -152,7 +152,7 @@
 .body5 {
   background-color: var(--color-white);
   overflow: hidden;
-  padding: var(--padding-45xl) 80px 128px;
+  padding: var(--padding-45xl) 160px 128px;
 }
 .satoshis-quest5 {
   position: relative;
