@@ -8,6 +8,7 @@
     <meta property="og:image" content="public/thumbnail.png" />
 
     <link rel="icon" href="public/favicon.ico" />
+    <meta name="description" content="Satoshi's Quest - Forum" />
     <link rel="stylesheet" href="./global.css" />
     <link rel="stylesheet" href="./forum.css" />
     <link
@@ -137,14 +138,14 @@
           }
         });
       }
-      
+
       var drawerguidesText = document.getElementById("drawerguidesText");
       if (drawerguidesText) {
         drawerguidesText.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/guides.html";
         });
       }
-      
+
       var drawerguidesText = document.getElementById("drawerguidesText");
       if (drawerguidesText) {
         drawerguidesText.addEventListener("click", function (e) {
@@ -164,14 +165,14 @@
           }
         });
       }
-      
+
       var drawerforumText = document.getElementById("drawerforumText");
       if (drawerforumText) {
         drawerforumText.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/forum.html";
         });
       }
-      
+
       var drawerforumText = document.getElementById("drawerforumText");
       if (drawerforumText) {
         drawerforumText.addEventListener("click", function (e) {
@@ -191,14 +192,14 @@
           }
         });
       }
-      
+
       var drawerstatsText = document.getElementById("drawerstatsText");
       if (drawerstatsText) {
         drawerstatsText.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/stats.html";
         });
       }
-      
+
       var drawerstatsText = document.getElementById("drawerstatsText");
       if (drawerstatsText) {
         drawerstatsText.addEventListener("click", function (e) {
@@ -218,14 +219,14 @@
           }
         });
       }
-      
+
       var drawermapText = document.getElementById("drawermapText");
       if (drawermapText) {
         drawermapText.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/maps.html";
         });
       }
-      
+
       var drawermapText = document.getElementById("drawermapText");
       if (drawermapText) {
         drawermapText.addEventListener("click", function (e) {
@@ -245,14 +246,14 @@
           }
         });
       }
-      
+
       var drawerdonateText = document.getElementById("drawerdonateText");
       if (drawerdonateText) {
         drawerdonateText.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/donate.html";
         });
       }
-      
+
       var drawerdonateText = document.getElementById("drawerdonateText");
       if (drawerdonateText) {
         drawerdonateText.addEventListener("click", function (e) {
@@ -272,7 +273,7 @@
           }
         });
       }
-      
+
       var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
       var observer = new IntersectionObserver(
         (entries) => {
@@ -288,18 +289,18 @@
           threshold: 0.15,
         }
       );
-      
+
       for (let i = 0; i < scrollAnimElements.length; i++) {
         observer.observe(scrollAnimElements[i]);
       }
-      
+
       var maskGroup1 = document.getElementById("maskGroup1");
       if (maskGroup1) {
         maskGroup1.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/";
         });
       }
-      
+
       var hamburgerMenuV5Container = document.getElementById(
         "hamburgerMenuV5Container"
       );
@@ -316,7 +317,7 @@
             drawerOverlayStyle.justifyContent = "";
           }
           drawerOverlay.setAttribute("closable", "");
-      
+
           var onClick =
             drawerOverlay.onClick ||
             function (e) {
@@ -330,41 +331,41 @@
           drawerOverlay.addEventListener("click", onClick);
         });
       }
-      
+
       var mapText = document.getElementById("mapText");
       if (mapText) {
         mapText.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/maps.html";
         });
       }
-      
+
       var guidesText = document.getElementById("guidesText");
       if (guidesText) {
         guidesText.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/guides.html";
         });
       }
-      
+
       var forumText = document.getElementById("forumText");
       if (forumText) {
         forumText.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/forum.html";
         });
       }
-      
+
       var statsText = document.getElementById("statsText");
       if (statsText) {
         statsText.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/stats.html";
         });
       }
-      
+
       var donateText = document.getElementById("donateText");
       if (donateText) {
         donateText.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/donate.html";
         });
       }
-      </script>
+    </script>
   </body>
 </html>
