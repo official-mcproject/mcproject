@@ -73,13 +73,13 @@
   animation: 1s ease-out 0s 1 normal none pulsate;
   opacity: 1;
 }
-.map2 {
+.map1 {
   position: relative;
   line-height: 15px;
   cursor: pointer;
 }
 .desktop-menu1,
-.navigation3,
+.navigation2,
 .top-menu1 {
   display: flex;
   flex-direction: row;
@@ -89,13 +89,13 @@
   justify-content: flex-end;
   gap: var(--gap-xl);
 }
-.navigation3,
+.navigation2,
 .top-menu1 {
   margin: 0;
   text-align: right;
   color: var(--color-white);
 }
-.navigation3 {
+.navigation2 {
   height: 40px;
   width: 317px;
   justify-content: flex-end;
@@ -187,7 +187,7 @@
 .icon-twitter1 {
   width: 29.5px;
 }
-.navigation4 {
+.navigation3 {
   margin: 0;
   height: 40px;
   flex-direction: row;
@@ -195,8 +195,8 @@
   gap: var(--gap-13xl);
 }
 .bottom-menu1,
-.forum2,
-.navigation4 {
+.forum1,
+.navigation3 {
   display: flex;
   align-items: center;
 }
@@ -212,7 +212,7 @@
   color: var(--color-white);
   font-family: var(--font-roboto-slab);
 }
-.forum2 {
+.forum1 {
   width: 100%;
   position: relative;
   background-color: var(--color-white);
@@ -221,7 +221,7 @@
   justify-content: flex-start;
 }
 @media screen and (max-width: 1200px) {
-  .navigation3 {
+  .navigation2 {
     display: flex;
   }
   .bottom-menu1,
@@ -237,7 +237,7 @@
     display: flex;
   }
   .desktop-menu1,
-  .navigation3 {
+  .navigation2 {
     display: none;
   }
   .body1,
@@ -307,7 +307,7 @@
   .bottom-menu-child {
     display: none;
   }
-  .navigation4 {
+  .navigation3 {
     display: flex;
   }
   .bottom-menu1 {
@@ -346,19 +346,19 @@
   align-items: center;
   justify-content: center;
 }
-.map1 {
+.map6 {
   position: relative;
   line-height: 15px;
   cursor: pointer;
 }
 .mobile-menu,
-.navigation2 {
+.navigation12 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   box-sizing: border-box;
 }
-.navigation2 {
+.navigation12 {
   margin: 0;
   width: 144px;
   align-items: flex-start;

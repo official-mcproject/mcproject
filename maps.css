@@ -73,13 +73,13 @@
   animation: 1s ease-out 0s 1 normal none pulsate;
   opacity: 1;
 }
-.map5 {
+.map4 {
   position: relative;
   line-height: 15px;
   cursor: pointer;
 }
 .desktop-menu4,
-.navigation9,
+.navigation8,
 .top-menu4 {
   display: flex;
   flex-direction: row;
@@ -89,13 +89,13 @@
   justify-content: flex-end;
   gap: var(--gap-xl);
 }
-.navigation9,
+.navigation8,
 .top-menu4 {
   margin: 0;
   text-align: right;
   color: var(--color-white);
 }
-.navigation9 {
+.navigation8 {
   height: 40px;
   width: 317px;
   justify-content: flex-end;
@@ -186,7 +186,7 @@
 .icon-twitter4 {
   width: 29.5px;
 }
-.navigation10 {
+.navigation9 {
   margin: 0;
   height: 40px;
   flex-direction: row;
@@ -195,7 +195,7 @@
 }
 .bottom-menu4,
 .maps,
-.navigation10 {
+.navigation9 {
   display: flex;
   align-items: center;
 }
@@ -220,7 +220,7 @@
   justify-content: flex-start;
 }
 @media screen and (max-width: 1200px) {
-  .navigation9 {
+  .navigation8 {
     display: flex;
   }
   .bottom-menu4,
@@ -236,7 +236,7 @@
     display: flex;
   }
   .desktop-menu4,
-  .navigation9 {
+  .navigation8 {
     display: none;
   }
   .body4,
@@ -306,7 +306,7 @@
   .bottom-menu-inner2 {
     display: none;
   }
-  .navigation10 {
+  .navigation9 {
     display: flex;
   }
   .bottom-menu4 {
@@ -345,19 +345,19 @@
   align-items: center;
   justify-content: center;
 }
-.map1 {
+.map6 {
   position: relative;
   line-height: 15px;
   cursor: pointer;
 }
 .mobile-menu,
-.navigation2 {
+.navigation12 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   box-sizing: border-box;
 }
-.navigation2 {
+.navigation12 {
   margin: 0;
   width: 144px;
   align-items: flex-start;
