@@ -31,7 +31,7 @@
     opacity: 1;
   }
 }
-.mask-group-13 {
+.mask-group-12 {
   width: 24px;
   position: relative;
   border-radius: var(--br-9xs);
@@ -39,11 +39,11 @@
   object-fit: cover;
   cursor: pointer;
 }
-.playsatoshisquest7 {
+.playsatoshisquest5 {
   position: relative;
   line-height: 15px;
 }
-.mask-group-1-parent1 {
+.mask-group-1-container {
   height: 40px;
   display: flex;
   flex-direction: row;
@@ -51,58 +51,58 @@
   justify-content: flex-start;
   gap: var(--gap-base);
 }
-.hamburger-menu-v5-child6,
-.hamburger-menu-v5-child7 {
+.hamburger-menu-v5-child3,
+.hamburger-menu-v5-child4 {
   width: 31.8px;
   position: relative;
   border-radius: var(--br-31xl);
   height: 4.2px;
 }
-.hamburger-menu-v5-child7 {
+.hamburger-menu-v5-child4 {
   height: 3.6px;
 }
-.hamburger-menu-v53 {
+.hamburger-menu-v52 {
   height: 24px;
   display: none;
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-between;
 }
-.hamburger-menu-v53:active {
+.hamburger-menu-v52:active {
   cursor: auto;
   animation: 1s ease-out 0s 1 normal none pulsate;
   opacity: 1;
 }
-.map4 {
+.map3 {
   position: relative;
   line-height: 15px;
   cursor: pointer;
 }
-.desktop-menu3,
-.navigation7,
-.top-menu3 {
+.desktop-menu2,
+.navigation5,
+.top-menu2 {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.desktop-menu3 {
+.desktop-menu2 {
   justify-content: flex-end;
   gap: var(--gap-xl);
 }
-.navigation7,
-.top-menu3 {
+.navigation5,
+.top-menu2 {
   margin: 0;
   text-align: right;
   color: var(--color-white);
 }
-.navigation7 {
+.navigation5 {
   height: 40px;
   width: 317px;
   justify-content: flex-end;
   font-size: var(--font-size-xl);
   font-family: var(--font-roboto);
 }
-.top-menu3 {
+.top-menu2 {
   align-self: stretch;
   background-color: var(--color-gray);
   justify-content: space-between;
@@ -110,13 +110,13 @@
   font-size: var(--font-size-base);
   font-family: var(--font-roboto-slab);
 }
-.body-inner {
+.body-item {
   align-self: stretch;
   border-radius: var(--br-5xs);
   background-color: var(--color-whitesmoke-100);
   height: 305px;
 }
-.body3 {
+.body2 {
   align-self: stretch;
   background-color: var(--color-white);
   overflow: hidden;
@@ -126,12 +126,12 @@
   justify-content: flex-start;
   padding: var(--padding-13xl) var(--padding-45xl);
 }
-.satoshis-quest3 {
+.satoshis-quest2 {
   position: relative;
   line-height: 15px;
   font-weight: 600;
 }
-.playsatoshisquest8 {
+.playsatoshisquest6 {
   height: 15px;
   position: relative;
   font-size: var(--font-size-base);
@@ -140,21 +140,21 @@
   color: var(--color-lightgray);
   display: inline-block;
 }
-.satoshis-quest-parent1 {
+.satoshis-quest-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   gap: var(--gap-7xs);
 }
-.bottom-menu-inner1 {
+.frame-div {
   height: 40px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
 }
-.vector-icon3 {
+.vector-icon2 {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -166,40 +166,40 @@
   overflow: hidden;
   max-height: 100%;
 }
-.icon-discord3 {
+.icon-discord2 {
   text-decoration: none;
   width: 21.7px;
   position: relative;
   height: 24px;
 }
-.icon-instagram3 {
+.icon-instagram2 {
   width: 24px;
   position: relative;
   height: 24px;
 }
-.icon-facebook3,
-.icon-twitter3 {
+.icon-facebook2,
+.icon-twitter2 {
   width: 24.1px;
   position: relative;
   height: 24px;
 }
-.icon-twitter3 {
+.icon-twitter2 {
   width: 29.5px;
 }
-.navigation8 {
+.navigation6 {
   margin: 0;
   height: 40px;
   flex-direction: row;
   justify-content: flex-end;
   gap: var(--gap-13xl);
 }
-.bottom-menu3,
-.navigation8,
-.stats4 {
+.bottom-menu2,
+.navigation6,
+.stats3 {
   display: flex;
   align-items: center;
 }
-.bottom-menu3 {
+.bottom-menu2 {
   margin: 0;
   align-self: stretch;
   background-color: var(--color-gray);
@@ -211,7 +211,7 @@
   color: var(--color-white);
   font-family: var(--font-roboto-slab);
 }
-.stats4 {
+.stats3 {
   width: 100%;
   position: relative;
   background-color: var(--color-white);
@@ -220,50 +220,50 @@
   justify-content: flex-start;
 }
 @media screen and (max-width: 1200px) {
-  .navigation7 {
+  .navigation5 {
     display: flex;
   }
-  .bottom-menu3,
-  .top-menu3 {
+  .bottom-menu2,
+  .top-menu2 {
     padding-left: var(--padding-45xl);
     padding-right: var(--padding-45xl);
     box-sizing: border-box;
   }
 }
 @media screen and (max-width: 960px) {
-  .hamburger-menu-v53,
-  .playsatoshisquest7 {
+  .hamburger-menu-v52,
+  .playsatoshisquest5 {
     display: flex;
   }
-  .desktop-menu3,
-  .navigation7 {
+  .desktop-menu2,
+  .navigation5 {
     display: none;
   }
-  .body3,
-  .top-menu3 {
+  .body2,
+  .top-menu2 {
     padding-left: var(--padding-13xl);
     padding-right: var(--padding-13xl);
     box-sizing: border-box;
   }
-  .body3 {
+  .body2 {
     padding-top: var(--padding-13xl);
   }
-  .playsatoshisquest8,
-  .satoshis-quest3 {
+  .playsatoshisquest6,
+  .satoshis-quest2 {
     display: flex;
   }
-  .bottom-menu3 {
+  .bottom-menu2 {
     padding-left: var(--padding-13xl);
     padding-right: var(--padding-13xl);
     box-sizing: border-box;
   }
 }
 @media screen and (max-width: 420px) {
-  .desktop-menu3,
-  .playsatoshisquest7 {
+  .desktop-menu2,
+  .playsatoshisquest5 {
     display: none;
   }
-  .hamburger-menu-v53:active {
+  .hamburger-menu-v52:active {
     animation: 1s ease-in 0s 1 normal none pulsate;
     opacity: 1;
   }
@@ -290,26 +290,26 @@
       animation-timing-function: ease-out;
     }
   }
-  .body3,
-  .top-menu3 {
+  .body2,
+  .top-menu2 {
     padding-left: var(--padding-base);
     padding-right: var(--padding-base);
     box-sizing: border-box;
   }
-  .body3 {
+  .body2 {
     padding-top: var(--padding-13xl);
   }
-  .playsatoshisquest8,
-  .satoshis-quest3 {
+  .playsatoshisquest6,
+  .satoshis-quest2 {
     display: flex;
   }
-  .bottom-menu-inner1 {
+  .frame-div {
     display: none;
   }
-  .navigation8 {
+  .navigation6 {
     display: flex;
   }
-  .bottom-menu3 {
+  .bottom-menu2 {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
@@ -320,7 +320,7 @@
   }
 }
 @media screen and (max-width: 350px) {
-  .body3 {
+  .body2 {
     padding-left: var(--padding-base);
     padding-top: var(--padding-13xl);
     padding-right: var(--padding-base);
@@ -345,20 +345,20 @@
   align-items: center;
   justify-content: center;
 }
-.guides2 {
+.guides1 {
   position: relative;
   line-height: 15px;
   font-weight: 600;
   cursor: pointer;
 }
 .mobile-menu,
-.navigation4 {
+.navigation2 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   box-sizing: border-box;
 }
-.navigation4 {
+.navigation2 {
   margin: 0;
   width: 144px;
   align-items: flex-start;
