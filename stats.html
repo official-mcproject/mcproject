@@ -23,75 +23,83 @@
     />
   </head>
   <body>
-    <div class="stats1">
-      <nav class="top-menu1">
-        <div class="mask-group-1-group">
+    <div class="stats2">
+      <nav class="top-menu2">
+        <div class="mask-group-1-container">
           <img
-            class="mask-group-11"
+            class="mask-group-12"
             loading="eager"
             alt=""
             src="./public/icon@2x.png"
             id="maskGroup1"
           />
 
-          <div class="playsatoshisquest3">play.satoshis.quest</div>
+          <div class="playsatoshisquest5">play.satoshis.quest</div>
         </div>
-        <div class="hamburger-menu-v51" id="hamburgerMenuV5Container">
-          <img class="rectangle-icon" alt="" src="./public/rectangle-19.svg" />
+        <div class="hamburger-menu-v52" id="hamburgerMenuV5Container">
+          <img
+            class="hamburger-menu-v5-child3"
+            alt=""
+            src="./public/rectangle-19.svg"
+          />
 
           <img
-            class="hamburger-menu-v5-child1"
+            class="hamburger-menu-v5-child4"
             alt=""
             src="./public/rectangle-18.svg"
           />
 
-          <img class="rectangle-icon" alt="" src="./public/rectangle-17.svg" />
+          <img
+            class="hamburger-menu-v5-child3"
+            alt=""
+            src="./public/rectangle-17.svg"
+          />
         </div>
-        <nav class="navigation2">
-          <div class="desktop-menu1">
-            <div class="map1">Map</div>
-            <div class="map1">Guides</div>
-            <div class="forum1" id="forumText">Forum</div>
-            <div class="map1">Stats</div>
-            <div class="map1">Donate</div>
+        <nav class="navigation4">
+          <div class="desktop-menu2">
+            <div class="map2" id="mapText">Map</div>
+            <div class="map2" id="guidesText">Guides</div>
+            <div class="map2" id="forumText">Forum</div>
+            <div class="map2" id="statsText">Stats</div>
+            <div class="map2" id="donateText">Donate</div>
           </div>
         </nav>
       </nav>
-      <div class="body1">
+      <div class="body2">
         <iframe
-          class="body-child"
+          class="body-item"
           src="https://discord.com/channels/1206856816256880661/1206861630038872094"
         >
         </iframe>
       </div>
-      <nav class="bottom-menu1">
-        <div class="bottom-menu-child">
-          <div class="satoshis-quest-group">
-            <div class="satoshis-quest1">Satoshi’s Quest</div>
-            <div class="playsatoshisquest4">play.satoshis.quest</div>
+      <nav class="bottom-menu2">
+        <div class="frame-div">
+          <div class="satoshis-quest-container">
+            <div class="satoshis-quest2">Satoshi’s Quest</div>
+            <div class="playsatoshisquest6">play.satoshis.quest</div>
           </div>
         </div>
-        <nav class="navigation3">
+        <nav class="navigation5">
           <a
-            class="icon-discord1"
+            class="icon-discord2"
             href="https://discord.gg/DYvq2wpfyz"
             target="_blank"
           >
-            <img class="vector-icon1" alt="" src="./public/-icon-discord.svg" />
+            <img class="vector-icon2" alt="" src="./public/-icon-discord.svg" />
           </a>
           <img
-            class="icon-instagram1"
+            class="icon-instagram2"
             alt=""
             src="./public/-icon-instagram.svg"
           />
 
           <img
-            class="icon-facebook1"
+            class="icon-facebook2"
             alt=""
             src="./public/-icon-facebook.svg"
           />
 
-          <img class="icon-twitter1" alt="" src="./public/-icon-twitter.svg" />
+          <img class="icon-twitter2" alt="" src="./public/-icon-twitter.svg" />
         </nav>
       </nav>
     </div>
@@ -107,11 +115,11 @@
           />
         </div>
         <nav class="navigation12">
-          <div class="guides7">Guides</div>
-          <div class="forum7" id="drawerforumText">Forum</div>
-          <div class="guides7">Stats</div>
-          <div class="guides7">Map</div>
-          <div class="guides7">Donate</div>
+          <div class="guides7" id="drawerguidesText">Guides</div>
+          <div class="guides7" id="drawerforumText">Forum</div>
+          <div class="guides7" id="drawerstatsText">Stats</div>
+          <div class="guides7" id="drawermapText">Map</div>
+          <div class="guides7" id="drawerdonateText">Donate</div>
         </nav>
       </div>
     </div>
@@ -120,6 +128,33 @@
       var drawergroupIcon = document.getElementById("drawergroupIcon");
       if (drawergroupIcon) {
         drawergroupIcon.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+      
+      var drawerguidesText = document.getElementById("drawerguidesText");
+      if (drawerguidesText) {
+        drawerguidesText.addEventListener("click", function () {
+          window.location.href = "https://satoshis.quest/guides.html";
+        });
+      }
+      
+      var drawerguidesText = document.getElementById("drawerguidesText");
+      if (drawerguidesText) {
+        drawerguidesText.addEventListener("click", function (e) {
           var popup = e.currentTarget.parentNode;
           function isOverlay(node) {
             return !!(
@@ -147,6 +182,87 @@
       var drawerforumText = document.getElementById("drawerforumText");
       if (drawerforumText) {
         drawerforumText.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+      
+      var drawerstatsText = document.getElementById("drawerstatsText");
+      if (drawerstatsText) {
+        drawerstatsText.addEventListener("click", function () {
+          window.location.href = "https://satoshis.quest/stats.html";
+        });
+      }
+      
+      var drawerstatsText = document.getElementById("drawerstatsText");
+      if (drawerstatsText) {
+        drawerstatsText.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+      
+      var drawermapText = document.getElementById("drawermapText");
+      if (drawermapText) {
+        drawermapText.addEventListener("click", function () {
+          window.location.href = "https://satoshis.quest/map.html";
+        });
+      }
+      
+      var drawermapText = document.getElementById("drawermapText");
+      if (drawermapText) {
+        drawermapText.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+      
+      var drawerdonateText = document.getElementById("drawerdonateText");
+      if (drawerdonateText) {
+        drawerdonateText.addEventListener("click", function () {
+          window.location.href = "https://satoshis.quest/donate.html";
+        });
+      }
+      
+      var drawerdonateText = document.getElementById("drawerdonateText");
+      if (drawerdonateText) {
+        drawerdonateText.addEventListener("click", function (e) {
           var popup = e.currentTarget.parentNode;
           function isOverlay(node) {
             return !!(
@@ -222,10 +338,38 @@
         });
       }
       
+      var mapText = document.getElementById("mapText");
+      if (mapText) {
+        mapText.addEventListener("click", function () {
+          window.location.href = "https://satoshis.quest/map.html";
+        });
+      }
+      
+      var guidesText = document.getElementById("guidesText");
+      if (guidesText) {
+        guidesText.addEventListener("click", function () {
+          window.location.href = "https://satoshis.quest/guides.html";
+        });
+      }
+      
       var forumText = document.getElementById("forumText");
       if (forumText) {
         forumText.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/forum.html";
+        });
+      }
+      
+      var statsText = document.getElementById("statsText");
+      if (statsText) {
+        statsText.addEventListener("click", function () {
+          window.location.href = "https://satoshis.quest/stats.html";
+        });
+      }
+      
+      var donateText = document.getElementById("donateText");
+      if (donateText) {
+        donateText.addEventListener("click", function () {
+          window.location.href = "https://satoshis.quest/donate.html";
         });
       }
       </script>

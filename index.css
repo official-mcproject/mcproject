@@ -76,24 +76,7 @@
 .map {
   position: relative;
   line-height: 15px;
-}
-.forum:active,
-.forum:hover,
-.map:active,
-.map:hover,
-.stats:hover {
-  color: var(--color-white);
-}
-.forum {
   cursor: pointer;
-}
-.forum,
-.stats {
-  position: relative;
-  line-height: 15px;
-}
-.stats:active {
-  color: #ffe736;
 }
 .desktop-menu,
 .navigation,
@@ -434,13 +417,10 @@
   align-items: center;
   justify-content: center;
 }
-.forum7,
 .guides7 {
   position: relative;
   line-height: 15px;
   font-weight: 600;
-}
-.forum7 {
   cursor: pointer;
 }
 .mobile-menu,
