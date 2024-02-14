@@ -93,60 +93,59 @@
 .top-menu {
   margin: 0;
   text-align: right;
+  font-size: var(--text-lg-regular-size);
   color: var(--color-white);
 }
 .navigation {
   height: 40px;
   width: 317px;
   justify-content: flex-end;
-  font-size: var(--font-size-xl);
-  font-family: var(--font-roboto);
+  font-family: var(--font-open-sans);
 }
 .top-menu {
   align-self: stretch;
   background-color: var(--color-gray);
   justify-content: space-between;
   padding: var(--padding-base) var(--padding-13xl);
-  font-size: var(--font-size-base);
   font-family: var(--font-roboto-slab);
 }
-.connect-play {
+.c {
+  text-transform: uppercase;
+}
+.onnect-play {
+  text-transform: capitalize;
+}
+.connect-play-container {
   align-self: stretch;
   position: relative;
-  line-height: 32px;
-  text-transform: uppercase;
-  font-weight: 600;
+  line-height: 43.2px;
+  font-weight: 500;
 }
 .open-your-minecraft {
   font-weight: 300;
 }
 .span {
-  font-family: var(--font-roboto);
-}
-.playsatoshisquest1 {
-  font-weight: 500;
   color: var(--color-white);
 }
 .open-your-minecraft-container {
   align-self: stretch;
   position: relative;
-  font-size: var(--font-size-xl);
+  font-size: var(--text-lg-regular-size);
   line-height: 24px;
   color: #f2f2f2;
-  font-family: var(--font-roboto);
+  font-family: var(--font-open-sans);
 }
 .connect-play-parent {
   width: 100%;
   border-radius: var(--br-5xs);
   background-color: rgba(6, 142, 53, 0.81);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   padding: var(--padding-base);
   box-sizing: border-box;
-  gap: var(--gap-3xs);
+  gap: var(--gap-base);
   max-width: 883px;
 }
 .picture-icon {
@@ -182,7 +181,7 @@
   text-align: left;
   font-size: var(--font-size-xl);
   color: #393939;
-  font-family: var(--font-inter);
+  font-family: var(--font-open-sans);
 }
 .body {
   align-self: stretch;
@@ -289,7 +288,7 @@
   flex-direction: column;
   justify-content: flex-start;
   text-align: center;
-  font-size: 28px;
+  font-size: 36px;
 }
 @media screen and (max-width: 1200px) {
   .navigation {
@@ -437,9 +436,9 @@
   padding: var(--padding-base) 0 0;
   gap: 24px;
   text-align: right;
-  font-size: var(--font-size-base);
+  font-size: var(--text-lg-regular-size);
   color: var(--color-white);
-  font-family: var(--font-inter);
+  font-family: var(--font-open-sans);
 }
 .mobile-menu {
   width: 200px;
@@ -447,7 +446,7 @@
   background-color: rgba(0, 0, 0, 0.85);
   align-items: flex-end;
   padding: var(--padding-base) var(--padding-13xl);
-  gap: var(--gap-3xs);
+  gap: 10px;
   opacity: 0;
   height: 100%;
   max-width: 90%;

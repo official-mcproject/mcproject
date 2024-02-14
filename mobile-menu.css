@@ -69,9 +69,9 @@
   padding: var(--padding-base) 0 0;
   gap: 24px;
   text-align: right;
-  font-size: var(--font-size-base);
+  font-size: var(--text-lg-regular-size);
   color: var(--color-white);
-  font-family: var(--font-inter);
+  font-family: var(--font-open-sans);
 }
 .mobile-menu {
   width: 200px;
@@ -79,7 +79,7 @@
   background-color: rgba(0, 0, 0, 0.85);
   align-items: flex-end;
   padding: var(--padding-base) var(--padding-13xl);
-  gap: var(--gap-3xs);
+  gap: 10px;
   opacity: 0;
   height: 100%;
   max-width: 90%;

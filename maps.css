@@ -93,25 +93,23 @@
 .top-menu4 {
   margin: 0;
   text-align: right;
+  font-size: var(--text-lg-regular-size);
   color: var(--color-white);
 }
 .navigation9 {
   height: 40px;
   width: 317px;
   justify-content: flex-end;
-  font-size: var(--font-size-xl);
-  font-family: var(--font-roboto);
+  font-family: var(--font-open-sans);
 }
 .top-menu4 {
   align-self: stretch;
   background-color: var(--color-gray);
   justify-content: space-between;
   padding: var(--padding-base) var(--padding-13xl);
-  font-size: var(--font-size-base);
   font-family: var(--font-roboto-slab);
 }
-.frame-iframe {
-  border: 0;
+.body-inner {
   align-self: stretch;
   border-radius: var(--br-5xs);
   background-color: var(--color-whitesmoke-100);
@@ -202,11 +200,12 @@
 }
 .bottom-menu4 {
   margin: 0;
-  align-self: stretch;
+  width: 785px;
   background-color: var(--color-gray);
   flex-direction: row;
   justify-content: space-between;
   padding: var(--padding-13xl);
+  box-sizing: border-box;
   text-align: right;
   font-size: var(--font-size-xl);
   color: var(--color-white);
@@ -366,9 +365,9 @@
   padding: var(--padding-base) 0 0;
   gap: 24px;
   text-align: right;
-  font-size: var(--font-size-base);
+  font-size: var(--text-lg-regular-size);
   color: var(--color-white);
-  font-family: var(--font-inter);
+  font-family: var(--font-open-sans);
 }
 .mobile-menu {
   width: 200px;
@@ -376,7 +375,7 @@
   background-color: rgba(0, 0, 0, 0.85);
   align-items: flex-end;
   padding: var(--padding-base) var(--padding-13xl);
-  gap: var(--gap-3xs);
+  gap: 10px;
   opacity: 0;
   height: 100%;
   max-width: 90%;

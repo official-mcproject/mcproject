@@ -14,24 +14,28 @@ body {
   /* fonts */
   --font-roboto: Roboto;
   --font-roboto-slab: "Roboto Slab";
-  --font-inter: Inter;
+  --font-open-sans: "Open Sans";
+  --text-lg-regular: Inter;
 
   /* font sizes */
   --font-size-base: 16px;
   --font-size-xl: 20px;
+  --text-lg-regular-size: 18px;
+  --display-xs-semibold-size: 24px;
 
   /* Colors */
   --color-white: #fff;
+  --gray-900: #101828;
   --color-gray: #171616;
   --color-lightgray: #cacaca;
   --color-whitesmoke-100: #f4f4f4;
+  --gray-500: #667085;
 
   /* Gaps */
   --gap-13xl: 32px;
   --gap-7xs: 6px;
-  --gap-3xs: 10px;
-  --gap-xl: 20px;
   --gap-base: 16px;
+  --gap-xl: 20px;
 
   /* Paddings */
   --padding-13xl: 32px;

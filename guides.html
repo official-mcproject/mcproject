@@ -13,15 +13,19 @@
     <link rel="stylesheet" href="./guides.css" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto Slab:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto Slab:wght@400;500;600&display=swap"
     />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open Sans:wght@300;400;600&display=swap"
     />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
     />
   </head>
   <body>
@@ -68,11 +72,76 @@
         </nav>
       </nav>
       <div class="body3">
-        <iframe
-          class="body-inner"
-          src="https://discord.com/channels/1206856816256880661/1206861630038872094"
-        >
-        </iframe>
+        <div class="body-padding">
+          <div class="heading-and-paragraph">
+            <div class="heading">
+              Optimizing letter spacing for display text
+            </div>
+            <div class="paragraph">
+              <p class="often-typefaces-are">
+                Often, typefaces are designed with an intended usage in mind —
+                they're optimized for display usage (larger headings), or text
+                (smaller body copy etc.) In general, text type is designed to be
+                legible and readable at small sizes.
+              </p>
+              <p class="often-typefaces-are">
+                Don't worry, you don't necessarily need to choose a separate
+                typeface for display and text. Many typefaces can be used for
+                both. Inter is a great example — it's clean, consistent, and
+                uncomplicated design features make it suitable for use at all
+                sizes.
+              </p>
+              <p class="often-typefaces-are">
+                However, if you're using the same typeface for both body text
+                and display test, it is often a good idea to tweak letter
+                spacing to the display text style to make it more legible in
+                larger sizing. Don't go overboard though, a little goes a long
+                way and helps display text look and feel tighter.
+              </p>
+              <p class="unfortunately-figma-only">
+                Unfortunately, Figma only allows you to define a % value for
+                letter spacing in text styles, which doesn't mirror CSS. If
+                you're handing designs to a developer or building a design
+                yourself, you'll need to define a either a hard-pixel value or a
+                rem/em value (e.g. -0.1em).
+              </p>
+            </div>
+          </div>
+          <div class="heading-and-paragraph">
+            <div class="heading">
+              Optimizing letter spacing for display text
+            </div>
+            <div class="paragraph">
+              <p class="often-typefaces-are">
+                Often, typefaces are designed with an intended usage in mind —
+                they're optimized for display usage (larger headings), or text
+                (smaller body copy etc.) In general, text type is designed to be
+                legible and readable at small sizes.
+              </p>
+              <p class="often-typefaces-are">
+                Don't worry, you don't necessarily need to choose a separate
+                typeface for display and text. Many typefaces can be used for
+                both. Inter is a great example — it's clean, consistent, and
+                uncomplicated design features make it suitable for use at all
+                sizes.
+              </p>
+              <p class="often-typefaces-are">
+                However, if you're using the same typeface for both body text
+                and display test, it is often a good idea to tweak letter
+                spacing to the display text style to make it more legible in
+                larger sizing. Don't go overboard though, a little goes a long
+                way and helps display text look and feel tighter.
+              </p>
+              <p class="unfortunately-figma-only">
+                Unfortunately, Figma only allows you to define a % value for
+                letter spacing in text styles, which doesn't mirror CSS. If
+                you're handing designs to a developer or building a design
+                yourself, you'll need to define a either a hard-pixel value or a
+                rem/em value (e.g. -0.1em).
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
       <nav class="bottom-menu3">
         <div class="bottom-menu-inner1">
@@ -146,14 +215,14 @@
           }
         });
       }
-
+      
       var drawerguidesText = document.getElementById("drawerguidesText");
       if (drawerguidesText) {
         drawerguidesText.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/guides.html";
         });
       }
-
+      
       var drawerguidesText = document.getElementById("drawerguidesText");
       if (drawerguidesText) {
         drawerguidesText.addEventListener("click", function (e) {
@@ -173,14 +242,14 @@
           }
         });
       }
-
+      
       var drawerforumText = document.getElementById("drawerforumText");
       if (drawerforumText) {
         drawerforumText.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/forum.html";
         });
       }
-
+      
       var drawerforumText = document.getElementById("drawerforumText");
       if (drawerforumText) {
         drawerforumText.addEventListener("click", function (e) {
@@ -200,14 +269,14 @@
           }
         });
       }
-
+      
       var drawerstatsText = document.getElementById("drawerstatsText");
       if (drawerstatsText) {
         drawerstatsText.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/stats.html";
         });
       }
-
+      
       var drawerstatsText = document.getElementById("drawerstatsText");
       if (drawerstatsText) {
         drawerstatsText.addEventListener("click", function (e) {
@@ -227,14 +296,14 @@
           }
         });
       }
-
+      
       var drawermapText = document.getElementById("drawermapText");
       if (drawermapText) {
         drawermapText.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/maps.html";
         });
       }
-
+      
       var drawermapText = document.getElementById("drawermapText");
       if (drawermapText) {
         drawermapText.addEventListener("click", function (e) {
@@ -254,14 +323,14 @@
           }
         });
       }
-
+      
       var drawerdonateText = document.getElementById("drawerdonateText");
       if (drawerdonateText) {
         drawerdonateText.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/donate.html";
         });
       }
-
+      
       var drawerdonateText = document.getElementById("drawerdonateText");
       if (drawerdonateText) {
         drawerdonateText.addEventListener("click", function (e) {
@@ -281,7 +350,7 @@
           }
         });
       }
-
+      
       var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
       var observer = new IntersectionObserver(
         (entries) => {
@@ -297,18 +366,18 @@
           threshold: 0.15,
         }
       );
-
+      
       for (let i = 0; i < scrollAnimElements.length; i++) {
         observer.observe(scrollAnimElements[i]);
       }
-
+      
       var maskGroup1 = document.getElementById("maskGroup1");
       if (maskGroup1) {
         maskGroup1.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/";
         });
       }
-
+      
       var hamburgerMenuV5Container = document.getElementById(
         "hamburgerMenuV5Container"
       );
@@ -325,7 +394,7 @@
             drawerOverlayStyle.justifyContent = "";
           }
           drawerOverlay.setAttribute("closable", "");
-
+      
           var onClick =
             drawerOverlay.onClick ||
             function (e) {
@@ -339,41 +408,41 @@
           drawerOverlay.addEventListener("click", onClick);
         });
       }
-
+      
       var mapText = document.getElementById("mapText");
       if (mapText) {
         mapText.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/maps.html";
         });
       }
-
+      
       var guidesText = document.getElementById("guidesText");
       if (guidesText) {
         guidesText.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/guides.html";
         });
       }
-
+      
       var forumText = document.getElementById("forumText");
       if (forumText) {
         forumText.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/forum.html";
         });
       }
-
+      
       var statsText = document.getElementById("statsText");
       if (statsText) {
         statsText.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/stats.html";
         });
       }
-
+      
       var donateText = document.getElementById("donateText");
       if (donateText) {
         donateText.addEventListener("click", function () {
           window.location.href = "https://satoshis.quest/donate.html";
         });
       }
-    </script>
+      </script>
   </body>
 </html>
