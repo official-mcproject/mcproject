@@ -78,20 +78,33 @@
   line-height: 15px;
   cursor: pointer;
 }
-.desktop-menu1,
-.navigation2,
-.top-menu1 {
+.desktop-menu1 {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-.desktop-menu1 {
   justify-content: flex-end;
   gap: var(--gap-xl);
+}
+.icon-game-controller1 {
+  width: 24.5px;
+  position: relative;
+  height: 18px;
+}
+.connect-button1 {
+  border-radius: var(--br-9xs);
+  background-color: var(--color-mediumseagreen);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-7xs) var(--padding-5xs);
 }
 .navigation2,
 .top-menu1 {
   margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   text-align: right;
   color: var(--color-white);
 }
@@ -99,6 +112,7 @@
   height: 40px;
   width: 317px;
   justify-content: flex-end;
+  gap: var(--gap-xl);
   font-size: var(--font-size-xl);
   font-family: var(--font-open-sans);
 }
@@ -328,6 +342,24 @@
     box-sizing: border-box;
   }
 }
+.play-now,
+.play-now-child {
+  width: 370px;
+  border-radius: var(--br-5xs);
+  height: 370px;
+}
+.play-now-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #d9d9d9;
+}
+.play-now {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+}
 .close-icon-child {
   width: 24px;
   position: relative;
@@ -346,19 +378,33 @@
   align-items: center;
   justify-content: center;
 }
-.map6 {
+.map5 {
   position: relative;
   line-height: 15px;
   cursor: pointer;
 }
+.icon-game-controller5 {
+  width: 24.5px;
+  position: relative;
+  height: 18px;
+}
+.icon-game-controller-wrapper {
+  border-radius: var(--br-9xs);
+  background-color: var(--color-mediumseagreen);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-7xs) var(--padding-5xs);
+}
 .mobile-menu,
-.navigation12 {
+.navigation11 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   box-sizing: border-box;
 }
-.navigation12 {
+.navigation11 {
   margin: 0;
   width: 144px;
   align-items: flex-start;

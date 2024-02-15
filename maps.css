@@ -39,7 +39,7 @@
   object-fit: cover;
   cursor: pointer;
 }
-.playsatoshisquest6 {
+.playsatoshisquest7 {
   position: relative;
   line-height: 15px;
 }
@@ -78,27 +78,41 @@
   line-height: 15px;
   cursor: pointer;
 }
-.desktop-menu3,
-.navigation6,
-.top-menu3 {
+.desktop-menu3 {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-.desktop-menu3 {
   justify-content: flex-end;
   gap: var(--gap-xl);
 }
-.navigation6,
+.icon-game-controller3 {
+  width: 24.5px;
+  position: relative;
+  height: 18px;
+}
+.connect-button3 {
+  border-radius: var(--br-9xs);
+  background-color: var(--color-mediumseagreen);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-7xs) var(--padding-5xs);
+}
+.navigation7,
 .top-menu3 {
   margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   text-align: right;
   color: var(--color-white);
 }
-.navigation6 {
+.navigation7 {
   height: 40px;
   width: 317px;
   justify-content: flex-end;
+  gap: var(--gap-xl);
   font-size: var(--font-size-xl);
   font-family: var(--font-open-sans);
 }
@@ -116,7 +130,7 @@
   background-color: var(--color-whitesmoke-100);
   height: 305px;
 }
-.body3 {
+.body4 {
   align-self: stretch;
   background-color: var(--color-white);
   overflow: hidden;
@@ -126,12 +140,12 @@
   justify-content: flex-start;
   padding: var(--padding-13xl) var(--padding-45xl);
 }
-.satoshis-quest3 {
+.satoshis-quest4 {
   position: relative;
   line-height: 15px;
   font-weight: 600;
 }
-.playsatoshisquest7 {
+.playsatoshisquest8 {
   height: 15px;
   position: relative;
   font-size: var(--font-size-base);
@@ -140,21 +154,21 @@
   color: var(--color-lightgray);
   display: inline-block;
 }
-.satoshis-quest-parent1 {
+.satoshis-quest-parent2 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   gap: var(--gap-7xs);
 }
-.bottom-menu-inner1 {
+.bottom-menu-inner2 {
   height: 40px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
 }
-.vector-icon3 {
+.vector-icon4 {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -166,40 +180,40 @@
   overflow: hidden;
   max-height: 100%;
 }
-.icon-discord3 {
+.icon-discord4 {
   text-decoration: none;
   width: 21.7px;
   position: relative;
   height: 24px;
 }
-.icon-instagram3 {
+.icon-instagram4 {
   width: 24px;
   position: relative;
   height: 24px;
 }
-.icon-facebook3,
-.icon-twitter3 {
+.icon-facebook4,
+.icon-twitter4 {
   width: 24.1px;
   position: relative;
   height: 24px;
 }
-.icon-twitter3 {
+.icon-twitter4 {
   width: 29.5px;
 }
-.navigation7 {
+.navigation8 {
   margin: 0;
   height: 40px;
   flex-direction: row;
   justify-content: flex-end;
   gap: var(--gap-13xl);
 }
-.bottom-menu3,
+.bottom-menu4,
 .maps,
-.navigation7 {
+.navigation8 {
   display: flex;
   align-items: center;
 }
-.bottom-menu3 {
+.bottom-menu4 {
   margin: 0;
   align-self: stretch;
   background-color: var(--color-gray);
@@ -220,10 +234,10 @@
   justify-content: flex-start;
 }
 @media screen and (max-width: 1200px) {
-  .navigation6 {
+  .navigation7 {
     display: flex;
   }
-  .bottom-menu3,
+  .bottom-menu4,
   .top-menu3 {
     padding-left: var(--padding-45xl);
     padding-right: var(--padding-45xl);
@@ -232,27 +246,27 @@
 }
 @media screen and (max-width: 960px) {
   .hamburger-menu-v53,
-  .playsatoshisquest6 {
+  .playsatoshisquest7 {
     display: flex;
   }
   .desktop-menu3,
-  .navigation6 {
+  .navigation7 {
     display: none;
   }
-  .body3,
+  .body4,
   .top-menu3 {
     padding-left: var(--padding-13xl);
     padding-right: var(--padding-13xl);
     box-sizing: border-box;
   }
-  .body3 {
+  .body4 {
     padding-top: var(--padding-13xl);
   }
-  .playsatoshisquest7,
-  .satoshis-quest3 {
+  .playsatoshisquest8,
+  .satoshis-quest4 {
     display: flex;
   }
-  .bottom-menu3 {
+  .bottom-menu4 {
     padding-left: var(--padding-13xl);
     padding-right: var(--padding-13xl);
     box-sizing: border-box;
@@ -260,7 +274,7 @@
 }
 @media screen and (max-width: 420px) {
   .desktop-menu3,
-  .playsatoshisquest6 {
+  .playsatoshisquest7 {
     display: none;
   }
   .hamburger-menu-v53:active {
@@ -290,26 +304,26 @@
       animation-timing-function: ease-out;
     }
   }
-  .body3,
+  .body4,
   .top-menu3 {
     padding-left: var(--padding-base);
     padding-right: var(--padding-base);
     box-sizing: border-box;
   }
-  .body3 {
+  .body4 {
     padding-top: var(--padding-13xl);
   }
-  .playsatoshisquest7,
-  .satoshis-quest3 {
+  .playsatoshisquest8,
+  .satoshis-quest4 {
     display: flex;
   }
-  .bottom-menu-inner1 {
+  .bottom-menu-inner2 {
     display: none;
   }
-  .navigation7 {
+  .navigation8 {
     display: flex;
   }
-  .bottom-menu3 {
+  .bottom-menu4 {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
@@ -320,12 +334,30 @@
   }
 }
 @media screen and (max-width: 350px) {
-  .body3 {
+  .body4 {
     padding-left: var(--padding-base);
     padding-top: var(--padding-13xl);
     padding-right: var(--padding-base);
     box-sizing: border-box;
   }
+}
+.play-now,
+.play-now-child {
+  width: 370px;
+  border-radius: var(--br-5xs);
+  height: 370px;
+}
+.play-now-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #d9d9d9;
+}
+.play-now {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
 }
 .close-icon-child {
   width: 24px;
@@ -345,19 +377,33 @@
   align-items: center;
   justify-content: center;
 }
-.map6 {
+.map5 {
   position: relative;
   line-height: 15px;
   cursor: pointer;
 }
+.icon-game-controller5 {
+  width: 24.5px;
+  position: relative;
+  height: 18px;
+}
+.icon-game-controller-wrapper {
+  border-radius: var(--br-9xs);
+  background-color: var(--color-mediumseagreen);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-7xs) var(--padding-5xs);
+}
 .mobile-menu,
-.navigation12 {
+.navigation11 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   box-sizing: border-box;
 }
-.navigation12 {
+.navigation11 {
   margin: 0;
   width: 144px;
   align-items: flex-start;

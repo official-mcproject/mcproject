@@ -30,6 +30,7 @@ body {
   --color-lightgray: #cacaca;
   --color-whitesmoke-100: #f4f4f4;
   --color-whitesmoke-200: #f2f2f2;
+  --color-mediumseagreen: #36a45b;
   --gray-500: #667085;
 
   /* Gaps */
@@ -42,9 +43,11 @@ body {
   --padding-13xl: 32px;
   --padding-45xl: 64px;
   --padding-base: 16px;
+  --padding-7xs: 6px;
+  --padding-5xs: 8px;
 
   /* Border radiuses */
   --br-5xs: 8px;
-  --br-31xl: 50px;
   --br-9xs: 4px;
+  --br-31xl: 50px;
 }
