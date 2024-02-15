@@ -342,19 +342,19 @@
     box-sizing: border-box;
   }
 }
-.play-now,
-.play-now-child {
-  width: 370px;
-  border-radius: var(--br-5xs);
-  height: 370px;
+.pop-up,
+.pop-up-child {
+  width: 350px;
+  height: 350px;
 }
-.play-now-child {
+.pop-up-child {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #d9d9d9;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-white);
 }
-.play-now {
+.pop-up {
   position: relative;
   max-width: 90%;
   max-height: 90%;
@@ -378,12 +378,12 @@
   align-items: center;
   justify-content: center;
 }
-.map5 {
+.map6 {
   position: relative;
   line-height: 15px;
   cursor: pointer;
 }
-.icon-game-controller5 {
+.icon-game-controller6 {
   width: 24.5px;
   position: relative;
   height: 18px;
@@ -398,13 +398,13 @@
   padding: var(--padding-7xs) var(--padding-5xs);
 }
 .mobile-menu,
-.navigation11 {
+.navigation12 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   box-sizing: border-box;
 }
-.navigation11 {
+.navigation12 {
   margin: 0;
   width: 144px;
   align-items: flex-start;

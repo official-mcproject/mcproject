@@ -31,7 +31,7 @@
     opacity: 1;
   }
 }
-.mask-group-13 {
+.mask-group-14 {
   width: 24px;
   position: relative;
   border-radius: var(--br-9xs);
@@ -39,11 +39,11 @@
   object-fit: cover;
   cursor: pointer;
 }
-.playsatoshisquest7 {
+.playsatoshisquest8 {
   position: relative;
   line-height: 15px;
 }
-.mask-group-1-parent1 {
+.mask-group-1-parent2 {
   height: 40px;
   display: flex;
   flex-direction: row;
@@ -51,46 +51,46 @@
   justify-content: flex-start;
   gap: var(--gap-base);
 }
-.hamburger-menu-v5-child6,
-.hamburger-menu-v5-child7 {
+.hamburger-menu-v5-child10,
+.hamburger-menu-v5-child9 {
   width: 31.8px;
   position: relative;
   border-radius: var(--br-31xl);
   height: 4.2px;
 }
-.hamburger-menu-v5-child7 {
+.hamburger-menu-v5-child10 {
   height: 3.6px;
 }
-.hamburger-menu-v53 {
+.hamburger-menu-v54 {
   height: 24px;
   display: none;
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-between;
 }
-.hamburger-menu-v53:active {
+.hamburger-menu-v54:active {
   cursor: auto;
   animation: 1s ease-out 0s 1 normal none pulsate;
   opacity: 1;
 }
-.map3 {
+.map4 {
   position: relative;
   line-height: 15px;
   cursor: pointer;
 }
-.desktop-menu3 {
+.desktop-menu4 {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
   gap: var(--gap-xl);
 }
-.icon-game-controller3 {
+.icon-game-controller4 {
   width: 24.5px;
   position: relative;
   height: 18px;
 }
-.connect-button3 {
+.connect-button4 {
   border-radius: var(--br-9xs);
   background-color: var(--color-mediumseagreen);
   display: flex;
@@ -99,8 +99,8 @@
   justify-content: flex-start;
   padding: var(--padding-7xs) var(--padding-5xs);
 }
-.navigation7,
-.top-menu3 {
+.navigation8,
+.top-menu4 {
   margin: 0;
   display: flex;
   flex-direction: row;
@@ -108,7 +108,7 @@
   text-align: right;
   color: var(--color-white);
 }
-.navigation7 {
+.navigation8 {
   height: 40px;
   width: 317px;
   justify-content: flex-end;
@@ -116,7 +116,7 @@
   font-size: var(--font-size-xl);
   font-family: var(--font-open-sans);
 }
-.top-menu3 {
+.top-menu4 {
   align-self: stretch;
   background-color: var(--color-gray);
   justify-content: space-between;
@@ -145,7 +145,7 @@
   line-height: 15px;
   font-weight: 600;
 }
-.playsatoshisquest8 {
+.playsatoshisquest9 {
   height: 15px;
   position: relative;
   font-size: var(--font-size-base);
@@ -200,7 +200,7 @@
 .icon-twitter4 {
   width: 29.5px;
 }
-.navigation8 {
+.navigation9 {
   margin: 0;
   height: 40px;
   flex-direction: row;
@@ -209,7 +209,7 @@
 }
 .bottom-menu4,
 .maps,
-.navigation8 {
+.navigation9 {
   display: flex;
   align-items: center;
 }
@@ -234,27 +234,27 @@
   justify-content: flex-start;
 }
 @media screen and (max-width: 1200px) {
-  .navigation7 {
+  .navigation8 {
     display: flex;
   }
   .bottom-menu4,
-  .top-menu3 {
+  .top-menu4 {
     padding-left: var(--padding-45xl);
     padding-right: var(--padding-45xl);
     box-sizing: border-box;
   }
 }
 @media screen and (max-width: 960px) {
-  .hamburger-menu-v53,
-  .playsatoshisquest7 {
+  .hamburger-menu-v54,
+  .playsatoshisquest8 {
     display: flex;
   }
-  .desktop-menu3,
-  .navigation7 {
+  .desktop-menu4,
+  .navigation8 {
     display: none;
   }
   .body4,
-  .top-menu3 {
+  .top-menu4 {
     padding-left: var(--padding-13xl);
     padding-right: var(--padding-13xl);
     box-sizing: border-box;
@@ -262,7 +262,7 @@
   .body4 {
     padding-top: var(--padding-13xl);
   }
-  .playsatoshisquest8,
+  .playsatoshisquest9,
   .satoshis-quest4 {
     display: flex;
   }
@@ -273,11 +273,11 @@
   }
 }
 @media screen and (max-width: 420px) {
-  .desktop-menu3,
-  .playsatoshisquest7 {
+  .desktop-menu4,
+  .playsatoshisquest8 {
     display: none;
   }
-  .hamburger-menu-v53:active {
+  .hamburger-menu-v54:active {
     animation: 1s ease-in 0s 1 normal none pulsate;
     opacity: 1;
   }
@@ -305,7 +305,7 @@
     }
   }
   .body4,
-  .top-menu3 {
+  .top-menu4 {
     padding-left: var(--padding-base);
     padding-right: var(--padding-base);
     box-sizing: border-box;
@@ -313,14 +313,14 @@
   .body4 {
     padding-top: var(--padding-13xl);
   }
-  .playsatoshisquest8,
+  .playsatoshisquest9,
   .satoshis-quest4 {
     display: flex;
   }
   .bottom-menu-inner2 {
     display: none;
   }
-  .navigation8 {
+  .navigation9 {
     display: flex;
   }
   .bottom-menu4 {
@@ -341,19 +341,19 @@
     box-sizing: border-box;
   }
 }
-.play-now,
-.play-now-child {
-  width: 370px;
-  border-radius: var(--br-5xs);
-  height: 370px;
+.pop-up,
+.pop-up-child {
+  width: 350px;
+  height: 350px;
 }
-.play-now-child {
+.pop-up-child {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #d9d9d9;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-white);
 }
-.play-now {
+.pop-up {
   position: relative;
   max-width: 90%;
   max-height: 90%;
@@ -377,12 +377,12 @@
   align-items: center;
   justify-content: center;
 }
-.map5 {
+.map6 {
   position: relative;
   line-height: 15px;
   cursor: pointer;
 }
-.icon-game-controller5 {
+.icon-game-controller6 {
   width: 24.5px;
   position: relative;
   height: 18px;
@@ -397,13 +397,13 @@
   padding: var(--padding-7xs) var(--padding-5xs);
 }
 .mobile-menu,
-.navigation11 {
+.navigation12 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   box-sizing: border-box;
 }
-.navigation11 {
+.navigation12 {
   margin: 0;
   width: 144px;
   align-items: flex-start;

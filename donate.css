@@ -31,7 +31,7 @@
     opacity: 1;
   }
 }
-.mask-group-14 {
+.mask-group-15 {
   width: 24px;
   position: relative;
   border-radius: var(--br-9xs);
@@ -39,11 +39,11 @@
   object-fit: cover;
   cursor: pointer;
 }
-.playsatoshisquest9 {
+.playsatoshisquest10 {
   position: relative;
   line-height: 15px;
 }
-.mask-group-1-parent2 {
+.mask-group-1-parent3 {
   height: 40px;
   display: flex;
   flex-direction: row;
@@ -51,46 +51,46 @@
   justify-content: flex-start;
   gap: var(--gap-base);
 }
-.hamburger-menu-v5-child10,
-.hamburger-menu-v5-child9 {
+.hamburger-menu-v5-child12,
+.hamburger-menu-v5-child13 {
   width: 31.8px;
   position: relative;
   border-radius: var(--br-31xl);
   height: 4.2px;
 }
-.hamburger-menu-v5-child10 {
+.hamburger-menu-v5-child13 {
   height: 3.6px;
 }
-.hamburger-menu-v54 {
+.hamburger-menu-v55 {
   height: 24px;
   display: none;
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-between;
 }
-.hamburger-menu-v54:active {
+.hamburger-menu-v55:active {
   cursor: auto;
   animation: 1s ease-out 0s 1 normal none pulsate;
   opacity: 1;
 }
-.map4 {
+.map5 {
   position: relative;
   line-height: 15px;
   cursor: pointer;
 }
-.desktop-menu4 {
+.desktop-menu5 {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
   gap: var(--gap-xl);
 }
-.icon-game-controller4 {
+.icon-game-controller5 {
   width: 24.5px;
   position: relative;
   height: 18px;
 }
-.connect-button4 {
+.connect-button5 {
   border-radius: var(--br-9xs);
   background-color: var(--color-mediumseagreen);
   display: flex;
@@ -99,8 +99,8 @@
   justify-content: flex-start;
   padding: var(--padding-7xs) var(--padding-5xs);
 }
-.navigation9,
-.top-menu4 {
+.navigation10,
+.top-menu5 {
   margin: 0;
   display: flex;
   flex-direction: row;
@@ -108,7 +108,7 @@
   text-align: right;
   color: var(--color-white);
 }
-.navigation9 {
+.navigation10 {
   height: 40px;
   width: 317px;
   justify-content: flex-end;
@@ -116,7 +116,7 @@
   font-size: var(--font-size-xl);
   font-family: var(--font-open-sans);
 }
-.top-menu4 {
+.top-menu5 {
   align-self: stretch;
   background-color: var(--color-gray);
   justify-content: space-between;
@@ -146,7 +146,7 @@
   line-height: 15px;
   font-weight: 600;
 }
-.playsatoshisquest10 {
+.playsatoshisquest11 {
   height: 15px;
   position: relative;
   font-size: var(--font-size-base);
@@ -201,7 +201,7 @@
 .icon-twitter5 {
   width: 29.5px;
 }
-.navigation10 {
+.navigation11 {
   margin: 0;
   height: 40px;
   flex-direction: row;
@@ -209,8 +209,8 @@
   gap: var(--gap-13xl);
 }
 .bottom-menu5,
-.donate4,
-.navigation10 {
+.donate5,
+.navigation11 {
   display: flex;
   align-items: center;
 }
@@ -226,7 +226,7 @@
   color: var(--color-white);
   font-family: var(--font-roboto-slab);
 }
-.donate4 {
+.donate5 {
   width: 100%;
   position: relative;
   background-color: var(--color-white);
@@ -235,27 +235,27 @@
   justify-content: flex-start;
 }
 @media screen and (max-width: 1200px) {
-  .navigation9 {
+  .navigation10 {
     display: flex;
   }
   .bottom-menu5,
-  .top-menu4 {
+  .top-menu5 {
     padding-left: var(--padding-45xl);
     padding-right: var(--padding-45xl);
     box-sizing: border-box;
   }
 }
 @media screen and (max-width: 960px) {
-  .hamburger-menu-v54,
-  .playsatoshisquest9 {
+  .hamburger-menu-v55,
+  .playsatoshisquest10 {
     display: flex;
   }
-  .desktop-menu4,
-  .navigation9 {
+  .desktop-menu5,
+  .navigation10 {
     display: none;
   }
   .body5,
-  .top-menu4 {
+  .top-menu5 {
     padding-left: var(--padding-13xl);
     padding-right: var(--padding-13xl);
     box-sizing: border-box;
@@ -263,7 +263,7 @@
   .body5 {
     padding-top: var(--padding-13xl);
   }
-  .playsatoshisquest10,
+  .playsatoshisquest11,
   .satoshis-quest5 {
     display: flex;
   }
@@ -274,11 +274,11 @@
   }
 }
 @media screen and (max-width: 420px) {
-  .desktop-menu4,
-  .playsatoshisquest9 {
+  .desktop-menu5,
+  .playsatoshisquest10 {
     display: none;
   }
-  .hamburger-menu-v54:active {
+  .hamburger-menu-v55:active {
     animation: 1s ease-in 0s 1 normal none pulsate;
     opacity: 1;
   }
@@ -306,7 +306,7 @@
     }
   }
   .body5,
-  .top-menu4 {
+  .top-menu5 {
     padding-left: var(--padding-base);
     padding-right: var(--padding-base);
     box-sizing: border-box;
@@ -314,14 +314,14 @@
   .body5 {
     padding-top: var(--padding-13xl);
   }
-  .playsatoshisquest10,
+  .playsatoshisquest11,
   .satoshis-quest5 {
     display: flex;
   }
   .bottom-menu-inner3 {
     display: none;
   }
-  .navigation10 {
+  .navigation11 {
     display: flex;
   }
   .bottom-menu5 {
@@ -342,19 +342,19 @@
     box-sizing: border-box;
   }
 }
-.play-now,
-.play-now-child {
-  width: 370px;
-  border-radius: var(--br-5xs);
-  height: 370px;
+.pop-up,
+.pop-up-child {
+  width: 350px;
+  height: 350px;
 }
-.play-now-child {
+.pop-up-child {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #d9d9d9;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-white);
 }
-.play-now {
+.pop-up {
   position: relative;
   max-width: 90%;
   max-height: 90%;
@@ -378,12 +378,12 @@
   align-items: center;
   justify-content: center;
 }
-.map5 {
+.map6 {
   position: relative;
   line-height: 15px;
   cursor: pointer;
 }
-.icon-game-controller5 {
+.icon-game-controller6 {
   width: 24.5px;
   position: relative;
   height: 18px;
@@ -398,13 +398,13 @@
   padding: var(--padding-7xs) var(--padding-5xs);
 }
 .mobile-menu,
-.navigation11 {
+.navigation12 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   box-sizing: border-box;
 }
-.navigation11 {
+.navigation12 {
   margin: 0;
   width: 144px;
   align-items: flex-start;

@@ -1,0 +1,18 @@
+.pop-up,
+.pop-up-child {
+  width: 350px;
+  height: 350px;
+}
+.pop-up-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-white);
+}
+.pop-up {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+}
